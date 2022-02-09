@@ -14,6 +14,7 @@
      xmlns:oboInOwl1="https://bio.scai.fraunhofer.de/ontology/schizophrenia#oboInOwl:"
      xmlns:schizophrenia="https://bio.scai.fraunhofer.de/ontology/schizophrenia#">
     <owl:Ontology rdf:about="https://bio.scai.fraunhofer.de/ontology/schizophrenia">
+        <owl:versionIRI rdf:resource="https://bio.scai.fraunhofer.de/ontology/schizophrenia/1.0.0"/>
         <dc:description>This is a schizophrenia disease ontology. Schizophrenia is a serious mental illness that affects how a person thinks, feels, and behaves. People with schizophrenia may seem like they have lost touch with reality, which causes significant distress for the individual, their family members, and friends. If left untreated, the symptoms of schizophrenia can be persistent and disabling. However, effective treatments are available. When delivered in a timely, coordinated, and sustained manner, treatment can help affected individuals to engage in school or work, achieve independence, and enjoy personal relationships.</dc:description>
         <terms:license>https://creativecommons.org/licenses/by/4.0/</terms:license>
         <terms:title>Schizophrenia Ontology</terms:title>
