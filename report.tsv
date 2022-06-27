@@ -1,7 +1,8 @@
 Level	Rule Name	Subject	Property	Value
-ERROR	missing_label	dc:title	rdfs:label	
-ERROR	missing_label	http://www.co-ode.org/ontologies/ont.owl#obsessive–compulsive	rdfs:label	
-ERROR	illegal_use_of_built_in_vocabulary	rdf:type	rdf:type	owl:AnnotationProperty
+ERROR	duplicate_label	IAO:0000119	rdfs:label	definition source
+ERROR	duplicate_label	SCDO:0000340	rdfs:label	definition source
+ERROR	duplicate_label	dc11:contributor	rdfs:label	contributor
+ERROR	duplicate_label	dc:contributor	rdfs:label	contributor
 ERROR	multiple_labels	IAO:0000111	rdfs:label	editor preferred label
 ERROR	multiple_labels	IAO:0000111	rdfs:label	editor preferred label@en
 ERROR	multiple_labels	IAO:0000111	rdfs:label	editor preferred term
@@ -57,10 +58,9 @@ ERROR	multiple_labels	oboInOwl:hasRelatedSynonym	rdfs:label	has related synonym@
 ERROR	multiple_labels	oboInOwl:hasRelatedSynonym	rdfs:label	has_related_synonym
 ERROR	multiple_labels	oboInOwl:inSubset	rdfs:label	in subset
 ERROR	multiple_labels	oboInOwl:inSubset	rdfs:label	in_subset
-ERROR	duplicate_label	IAO:0000119	rdfs:label	definition source
-ERROR	duplicate_label	SCDO:0000340	rdfs:label	definition source
-ERROR	duplicate_label	dc11:contributor	rdfs:label	contributor
-ERROR	duplicate_label	dc:contributor	rdfs:label	contributor
+ERROR	illegal_use_of_built_in_vocabulary	rdf:type	rdf:type	owl:AnnotationProperty
+ERROR	multiple_definitions	DOID:9965	IAO:0000115	A coccidiosis that has material basis in protozoan Toxoplasma gondii. The parasite effects most genera of warm-blooded animals, including humans, but the primary host is the felid (cat) family. Animals are infected by eating infected meat, by ingestion of feces of a cat that has itself recently been infected, or transmission by mother to fetus. The symptoms include bilateral, nontender cervical or axillary lymphadenopathy, fever, malaise, myalgia, hepatosplenomegaly, anemia and leukopenia.
+ERROR	multiple_definitions	DOID:9965	IAO:0000115	A coccidiosis that has_material_basis_in protozoan Toxoplasma gondii. The parasite effects most genera of warm-blooded animals, including humans, but the primary host is the felid (cat) family. Animals are infected by eating infected meat, by ingestion of feces of a cat that has itself recently been infected, or transmission_by mother to fetus. The symptoms include bilateral, nontender cervical or axillary lymphadenopathy, fever, malaise, myalgia, hepatosplenomegaly, anemia and leukopenia.
 ERROR	multiple_definitions	IAO:0000112	IAO:0000115	A phrase describing how a class name should be used. May also include other kinds of examples that facilitate immediate understanding of a class semantics, such as widely known prototypical subclasses or instances of the class. Although essential for high level terms, examples for low level terms (e.g., Affymetrix HU133 array) are not@en
 ERROR	multiple_definitions	IAO:0000112	IAO:0000115	A phrase describing how a term should be used and/or a citation to a work which uses it. May also include other kinds of examples that facilitate immediate understanding, such as widely know prototypes or instances of a class, or cases where a relation is said to hold.@en
 ERROR	multiple_definitions	IAO:0000115	IAO:0000115	A property representing the English language definitions of what NCI means by the concept. They may also include information about the definition's source and attribution in a form that can easily be interpreted by software.
@@ -73,6 +73,18 @@ ERROR	multiple_definitions	IAO:0000117	IAO:0000115	Name of editor entering the d
 ERROR	multiple_definitions	IAO:0000117	IAO:0000115	Name of editor entering the term in the file. The term editor is a point of contact for information regarding the term. The term editor may be, but is not always, the author of the definition, which may have been worked upon by several people@en
 ERROR	multiple_definitions	IAO:0000119	IAO:0000115	Formal citation, e.g. identifier in external database to indicate / attribute source(s) for the definition. Free text indicate / attribute source(s) for the definition. EXAMPLE: Author Name, URI, MeSH Term C04, PUBMED ID, Wiki uri on 31.01.2007@en
 ERROR	multiple_definitions	IAO:0000119	IAO:0000115	formal citation, e.g. identifier in external database to indicate / attribute source(s) for the definition. Free text indicate / attribute source(s) for the definition. EXAMPLE: Author Name, URI, MeSH Term C04, PUBMED ID, Wiki uri on 31.01.2007@en
+ERROR	multiple_definitions	MFOMD:0000181	IAO:0000115	Inability to rest or relax or be still.
+ERROR	multiple_definitions	MFOMD:0000181	IAO:0000115	"Inability to rest or relax or be still.
+
+
+http://www.thefreedictionary.com/restlessness"
+ERROR	multiple_definitions	NCIT:C102124	IAO:0000115	A standardized rating scale developed by R. C. Young and colleagues in 1978 to assess the severity of an individual's mania. This instrument contains 11 items or symptoms associated with mania which is administered by a clinician. Each item has 5 response options but the weight of each response differs with each item.
+ERROR	multiple_definitions	NCIT:C102124	IAO:0000115	Young Mania Rating Scale
+ERROR	multiple_definitions	OGMS:0000083	IAO:0000115	TODO: Define.@en
+ERROR	multiple_definitions	OGMS:0000083	IAO:0000115	The result of an evaluation of the body and its functions using visual inspection, palpation, percussion, or auscultation that is performed to determine the presence, absence, or degree of a condition.
+ERROR	multiple_definitions	OGMS:0000098	IAO:0000115	TODO@en
+ERROR	multiple_definitions	OGMS:0000098	IAO:0000115	The confinement of a patient in a hospital.
+ERROR	multiple_definitions	ONTONEO:00000027	IAO:0000115	A systematic evaluation of the causes, the symptoms, the course and the consequences of a psychiatric disorder in order to formulate a diagnosis and a treatment plan, and to answer any questions the patient or referring specialist may have.
 ERROR	multiple_definitions	ONTONEO:00000027	IAO:0000115	TO DO@en
 ERROR	multiple_definitions	ONTONEO:00000027	IAO:0000115	TO DO@pt
 ERROR	multiple_definitions	RO:0002161	IAO:0000115	S never_in_taxon T iff: S SubClassOf in_taxon only not T.
@@ -90,469 +102,7 @@ ERROR	multiple_definitions	oboInOwl:id	IAO:0000115	An identifier for an individu
 ERROR	multiple_definitions	oboInOwl:id	IAO:0000115	An identifier is an information content entity that is the outcome of a dubbing process and is used to refer to one instance of entity shared by a group of people to refer to that individual entity.
 ERROR	multiple_definitions	oboInOwl:inSubset	IAO:0000115	An association that connects the concept defining a particular terminology subset with concepts that belong to this subset.
 ERROR	multiple_definitions	oboInOwl:inSubset	IAO:0000115	In subset.
-WARN	missing_definition	BCGO:0000031	IAO:0000115	
-WARN	missing_definition	BFO:0000141	IAO:0000115	
-WARN	missing_definition	CMO:0000000	IAO:0000115	
-WARN	missing_definition	CMO:0000023	IAO:0000115	
-WARN	missing_definition	CMO:0000035	IAO:0000115	
-WARN	missing_definition	CMO:0000036	IAO:0000115	
-WARN	missing_definition	CMO:0000046	IAO:0000115	
-WARN	missing_definition	CMO:0000050	IAO:0000115	
-WARN	missing_definition	CMO:0000051	IAO:0000115	
-WARN	missing_definition	CMO:0000052	IAO:0000115	
-WARN	missing_definition	CMO:0000053	IAO:0000115	
-WARN	missing_definition	CMO:0000118	IAO:0000115	
-WARN	missing_definition	CMO:0000119	IAO:0000115	
-WARN	missing_definition	CMO:0000286	IAO:0000115	
-WARN	missing_definition	CMO:0000294	IAO:0000115	
-WARN	missing_definition	CMO:0000360	IAO:0000115	
-WARN	missing_definition	CMO:0000364	IAO:0000115	
-WARN	missing_definition	CMO:0000490	IAO:0000115	
-WARN	missing_definition	CMO:0000503	IAO:0000115	
-WARN	missing_definition	CMO:0000515	IAO:0000115	
-WARN	missing_definition	CMO:0001003	IAO:0000115	
-WARN	missing_definition	CMO:0001247	IAO:0000115	
-WARN	missing_definition	CMO:0001822	IAO:0000115	
-WARN	missing_definition	CMO:0001824	IAO:0000115	
-WARN	missing_definition	CMO:0002048	IAO:0000115	
-WARN	missing_definition	CMO:0002049	IAO:0000115	
-WARN	missing_definition	CMO:0002280	IAO:0000115	
-WARN	missing_definition	CMO:0002281	IAO:0000115	
-WARN	missing_definition	CMO:0002570	IAO:0000115	
-WARN	missing_definition	CMO:0002786	IAO:0000115	
-WARN	missing_definition	DOID:11949	IAO:0000115	
-WARN	missing_definition	DOID:1203	IAO:0000115	
-WARN	missing_definition	DOID:1742	IAO:0000115	
-WARN	missing_definition	DOID:2237	IAO:0000115	
-WARN	missing_definition	DOID:251	IAO:0000115	
-WARN	missing_definition	DOID:2734	IAO:0000115	
-WARN	missing_definition	DOID:3328	IAO:0000115	
-WARN	missing_definition	DOID:4175	IAO:0000115	
-WARN	missing_definition	DOID:8646	IAO:0000115	
-WARN	missing_definition	DOID:893	IAO:0000115	
-WARN	missing_definition	FMA:242176	IAO:0000115	
-WARN	missing_definition	FMA:68614	IAO:0000115	
-WARN	missing_definition	HP:0000741	IAO:0000115	
-WARN	missing_definition	HP:0000748	IAO:0000115	
-WARN	missing_definition	HP:0001507	IAO:0000115	
-WARN	missing_definition	HP:0032251	IAO:0000115	
-WARN	missing_definition	IAO:0000114	IAO:0000115	
-WARN	missing_definition	IAO:0000425	IAO:0000115	
-WARN	missing_definition	IAO:0000600	IAO:0000115	
-WARN	missing_definition	IAO:0000601	IAO:0000115	
-WARN	missing_definition	IAO:0000602	IAO:0000115	
-WARN	missing_definition	MFOEM:000010	IAO:0000115	
-WARN	missing_definition	MFOEM:000165	IAO:0000115	
-WARN	missing_definition	MFOMD:0000020	IAO:0000115	
-WARN	missing_definition	MFOMD:0000021	IAO:0000115	
-WARN	missing_definition	MFOMD:0000022	IAO:0000115	
-WARN	missing_definition	MFOMD:0000023	IAO:0000115	
-WARN	missing_definition	MFOMD:0000024	IAO:0000115	
-WARN	missing_definition	MFOMD:0000037	IAO:0000115	
-WARN	missing_definition	MFOMD:0000069	IAO:0000115	
-WARN	missing_definition	MONDO:0010096	IAO:0000115	
-WARN	missing_definition	MONDO:0013696	IAO:0000115	
-WARN	missing_definition	MONDO:0014421	IAO:0000115	
-WARN	missing_definition	MONDO:0019939	IAO:0000115	
-WARN	missing_definition	MP:0011717	IAO:0000115	
-WARN	missing_definition	NBO:0000121	IAO:0000115	
-WARN	missing_definition	NCBITaxon:10090	IAO:0000115	
-WARN	missing_definition	NCBITaxon:10116	IAO:0000115	
-WARN	missing_definition	NCBITaxon:131567	IAO:0000115	
-WARN	missing_definition	NCBITaxon:2759	IAO:0000115	
-WARN	missing_definition	NCBITaxon:40674	IAO:0000115	
-WARN	missing_definition	NCBITaxon:6231	IAO:0000115	
-WARN	missing_definition	NCBITaxon:6239	IAO:0000115	
-WARN	missing_definition	NCBITaxon:6656	IAO:0000115	
-WARN	missing_definition	NCBITaxon:7227	IAO:0000115	
-WARN	missing_definition	NCBITaxon:7742	IAO:0000115	
-WARN	missing_definition	NCBITaxon:7955	IAO:0000115	
-WARN	missing_definition	NCBITaxon:9544	IAO:0000115	
-WARN	missing_definition	NCBITaxon:9606	IAO:0000115	
-WARN	missing_definition	NCIT:C17456	IAO:0000115	
-WARN	missing_definition	NCIT:C19146	IAO:0000115	
-WARN	missing_definition	NCIT:C19148	IAO:0000115	
-WARN	missing_definition	NCIT:C34759	IAO:0000115	
-WARN	missing_definition	NCIT:C35269	IAO:0000115	
-WARN	missing_definition	NCIT:C35270	IAO:0000115	
-WARN	missing_definition	NCIT:C39011	IAO:0000115	
-WARN	missing_definition	NCIT:C39194	IAO:0000115	
-WARN	missing_definition	NCIT:C63479	IAO:0000115	
-WARN	missing_definition	NCIT:C67022	IAO:0000115	
-WARN	missing_definition	NCIT:C91438	IAO:0000115	
-WARN	missing_definition	OAE:0004334	IAO:0000115	
-WARN	missing_definition	OGMS:0000032	IAO:0000115	
-WARN	missing_definition	OGMS:0000060	IAO:0000115	
-WARN	missing_definition	OMIT:0001091	IAO:0000115	
-WARN	missing_definition	OMIT:0001102	IAO:0000115	
-WARN	missing_definition	OMIT:0001389	IAO:0000115	
-WARN	missing_definition	OMIT:0003974	IAO:0000115	
-WARN	missing_definition	OMIT:0004714	IAO:0000115	
-WARN	missing_definition	OMIT:0004898	IAO:0000115	
-WARN	missing_definition	OMIT:0005833	IAO:0000115	
-WARN	missing_definition	OMIT:0005844	IAO:0000115	
-WARN	missing_definition	OMIT:0005847	IAO:0000115	
-WARN	missing_definition	OMIT:0006785	IAO:0000115	
-WARN	missing_definition	OMIT:0007783	IAO:0000115	
-WARN	missing_definition	OMIT:0007850	IAO:0000115	
-WARN	missing_definition	OMIT:0007853	IAO:0000115	
-WARN	missing_definition	OMIT:0008479	IAO:0000115	
-WARN	missing_definition	OMIT:0008783	IAO:0000115	
-WARN	missing_definition	OMIT:0009194	IAO:0000115	
-WARN	missing_definition	OMIT:0010070	IAO:0000115	
-WARN	missing_definition	OMIT:0010186	IAO:0000115	
-WARN	missing_definition	OMIT:0010355	IAO:0000115	
-WARN	missing_definition	OMIT:0010517	IAO:0000115	
-WARN	missing_definition	OMIT:0011060	IAO:0000115	
-WARN	missing_definition	OMIT:0011547	IAO:0000115	
-WARN	missing_definition	OMIT:0011771	IAO:0000115	
-WARN	missing_definition	OMIT:0012538	IAO:0000115	
-WARN	missing_definition	OMIT:0012977	IAO:0000115	
-WARN	missing_definition	OMIT:0013298	IAO:0000115	
-WARN	missing_definition	OMIT:0013821	IAO:0000115	
-WARN	missing_definition	OMIT:0014277	IAO:0000115	
-WARN	missing_definition	OMIT:0014805	IAO:0000115	
-WARN	missing_definition	OMIT:0014985	IAO:0000115	
-WARN	missing_definition	OMIT:0015427	IAO:0000115	
-WARN	missing_definition	OMIT:0015637	IAO:0000115	
-WARN	missing_definition	OMIT:0015836	IAO:0000115	
-WARN	missing_definition	OMIT:0019915	IAO:0000115	
-WARN	missing_definition	OMIT:0021330	IAO:0000115	
-WARN	missing_definition	OMIT:0023802	IAO:0000115	
-WARN	missing_definition	OMIT:0026166	IAO:0000115	
-WARN	missing_definition	OMIT:0026330	IAO:0000115	
-WARN	missing_definition	OMIT:0026614	IAO:0000115	
-WARN	missing_definition	OMIT:0026908	IAO:0000115	
-WARN	missing_definition	OMIT:0027103	IAO:0000115	
-WARN	missing_definition	OMIT:0027205	IAO:0000115	
-WARN	missing_definition	OMIT:0027688	IAO:0000115	
-WARN	missing_definition	OMIT:0027689	IAO:0000115	
-WARN	missing_definition	OMIT:0027916	IAO:0000115	
-WARN	missing_definition	OMIT:0028084	IAO:0000115	
-WARN	missing_definition	OMIT:0028445	IAO:0000115	
-WARN	missing_definition	OMIT:0028556	IAO:0000115	
-WARN	missing_definition	OMIT:0028568	IAO:0000115	
-WARN	missing_definition	OMIT:0028603	IAO:0000115	
-WARN	missing_definition	OMIT:0028786	IAO:0000115	
-WARN	missing_definition	SYMP:0000019	IAO:0000115	
-WARN	missing_definition	SYMP:0000022	IAO:0000115	
-WARN	missing_definition	SYMP:0000124	IAO:0000115	
-WARN	missing_definition	SYMP:0000178	IAO:0000115	
-WARN	missing_definition	SYMP:0000303	IAO:0000115	
-WARN	missing_definition	SYMP:0000387	IAO:0000115	
-WARN	missing_definition	SYMP:0000403	IAO:0000115	
-WARN	missing_definition	SYMP:0000410	IAO:0000115	
-WARN	missing_definition	SYMP:0000459	IAO:0000115	
-WARN	missing_definition	SYMP:0000461	IAO:0000115	
-WARN	missing_definition	SYMP:0000473	IAO:0000115	
-WARN	missing_definition	SYMP:0000480	IAO:0000115	
-WARN	missing_definition	SYMP:0000566	IAO:0000115	
-WARN	missing_definition	SYMP:0000567	IAO:0000115	
-WARN	missing_definition	SYMP:0000666	IAO:0000115	
-WARN	missing_definition	SYMP:0000719	IAO:0000115	
-WARN	missing_definition	SYMP:0019139	IAO:0000115	
-WARN	missing_definition	UBERON:0002948	IAO:0000115	
-WARN	missing_definition	UBERON:0005913	IAO:0000115	
-WARN	missing_definition	UBERON:0006101	IAO:0000115	
-WARN	missing_definition	UBERON:0006473	IAO:0000115	
-WARN	missing_definition	UBERON:0013540	IAO:0000115	
-WARN	missing_definition	UBERON:0016540	IAO:0000115	
-WARN	missing_definition	UBERON:0022398	IAO:0000115	
-WARN	missing_definition	UBERON:0034944	IAO:0000115	
-WARN	missing_definition	obo:UBPROP_0000007	IAO:0000115	
-WARN	missing_definition	obo:UBPROP_0000201	IAO:0000115	
-WARN	missing_definition	obo:UBPROP_0000202	IAO:0000115	
-WARN	missing_definition	dc11:contributor	IAO:0000115	
-WARN	missing_definition	dc11:description	IAO:0000115	
-WARN	missing_definition	dc11:source	IAO:0000115	
-WARN	missing_definition	dc:contributor	IAO:0000115	
-WARN	missing_definition	dc:license	IAO:0000115	
-WARN	missing_definition	dc:title	IAO:0000115	
-WARN	missing_definition	http://www.co-ode.org/ontologies/ont.owl#obsessive–compulsive	IAO:0000115	
-WARN	missing_definition	oboInOwl:hasBroadSynonym	IAO:0000115	
-WARN	missing_definition	oboInOwl:hasNarrowSynonym	IAO:0000115	
-WARN	missing_definition	oboInOwl:shorthand	IAO:0000115	
-WARN	missing_definition	foaf:depicted_by	IAO:0000115	
-WARN	missing_definition	https://bio.scai.fraunhofer.de/ontology/bipolar_disorder#clinical_risk_factor	IAO:0000115	
-WARN	missing_definition	https://bio.scai.fraunhofer.de/ontology/bipolar_disorder#serum_lipid_level	IAO:0000115	
-WARN	missing_definition	https://bio.scai.fraunhofer.de/ontology/schizophrenia#14-3-3_functional_knockout_mouse_model	IAO:0000115	
-WARN	missing_definition	https://bio.scai.fraunhofer.de/ontology/schizophrenia#22q11.2_deletion_mouse_model	IAO:0000115	
-WARN	missing_definition	https://bio.scai.fraunhofer.de/ontology/schizophrenia#5-hydroxytryptamine_receptor_2A_agonist_model	IAO:0000115	
-WARN	missing_definition	https://bio.scai.fraunhofer.de/ontology/schizophrenia#ADYCAP1_variant_mouse_model	IAO:0000115	
-WARN	missing_definition	https://bio.scai.fraunhofer.de/ontology/schizophrenia#BDNF_knockout_mouse_model	IAO:0000115	
-WARN	missing_definition	https://bio.scai.fraunhofer.de/ontology/schizophrenia#Barratt_impulsivity_scale	IAO:0000115	
-WARN	missing_definition	https://bio.scai.fraunhofer.de/ontology/schizophrenia#Barron_Welsh_art_scale	IAO:0000115	
-WARN	missing_definition	https://bio.scai.fraunhofer.de/ontology/schizophrenia#Basel_screening_instrument_for_psychosis	IAO:0000115	
-WARN	missing_definition	https://bio.scai.fraunhofer.de/ontology/schizophrenia#Bonn_scale_for_the_assessment_of_basic_symptoms	IAO:0000115	
-WARN	missing_definition	https://bio.scai.fraunhofer.de/ontology/schizophrenia#COMT_knockout_mouse_model	IAO:0000115	
-WARN	missing_definition	https://bio.scai.fraunhofer.de/ontology/schizophrenia#CX3CL1_mutant_mouse_model	IAO:0000115	
-WARN	missing_definition	https://bio.scai.fraunhofer.de/ontology/schizophrenia#CX3CR1_mutant_mouse_model	IAO:0000115	
-WARN	missing_definition	https://bio.scai.fraunhofer.de/ontology/schizophrenia#Calgary_depression_scale	IAO:0000115	
-WARN	missing_definition	https://bio.scai.fraunhofer.de/ontology/schizophrenia#Camberwell_assessment_of_need	IAO:0000115	
-WARN	missing_definition	https://bio.scai.fraunhofer.de/ontology/schizophrenia#Cambridge_gamble_task	IAO:0000115	
-WARN	missing_definition	https://bio.scai.fraunhofer.de/ontology/schizophrenia#Cambridge_neuropsychological_automated_testing_battery_assessment	IAO:0000115	
-WARN	missing_definition	https://bio.scai.fraunhofer.de/ontology/schizophrenia#DAO_knockout_mouse_model	IAO:0000115	
-WARN	missing_definition	https://bio.scai.fraunhofer.de/ontology/schizophrenia#DAT_knockout_rat_model	IAO:0000115	
-WARN	missing_definition	https://bio.scai.fraunhofer.de/ontology/schizophrenia#DISC1_mutant_mouse_model	IAO:0000115	
-WARN	missing_definition	https://bio.scai.fraunhofer.de/ontology/schizophrenia#DRD2_over-expression_mouse_model	IAO:0000115	
-WARN	missing_definition	https://bio.scai.fraunhofer.de/ontology/schizophrenia#DRD3_over-expression_mouse_model	IAO:0000115	
-WARN	missing_definition	https://bio.scai.fraunhofer.de/ontology/schizophrenia#DTNBP1_mutant_mouse_model	IAO:0000115	
-WARN	missing_definition	https://bio.scai.fraunhofer.de/ontology/schizophrenia#Dartmouth_assessment_of_lifestyle_instrument	IAO:0000115	
-WARN	missing_definition	https://bio.scai.fraunhofer.de/ontology/schizophrenia#ERBB2/4_knockout_mouse_model	IAO:0000115	
-WARN	missing_definition	https://bio.scai.fraunhofer.de/ontology/schizophrenia#G72_transgenic_mouse_model	IAO:0000115	
-WARN	missing_definition	https://bio.scai.fraunhofer.de/ontology/schizophrenia#GAD1_knockout_mouse_model	IAO:0000115	
-WARN	missing_definition	https://bio.scai.fraunhofer.de/ontology/schizophrenia#Individual_therapy	IAO:0000115	
-WARN	missing_definition	https://bio.scai.fraunhofer.de/ontology/schizophrenia#Iowa_gambling_task	IAO:0000115	
-WARN	missing_definition	https://bio.scai.fraunhofer.de/ontology/schizophrenia#Michigan_alcoholism_screening_test	IAO:0000115	
-WARN	missing_definition	https://bio.scai.fraunhofer.de/ontology/schizophrenia#Multnomah_community_ability_scale	IAO:0000115	
-WARN	missing_definition	https://bio.scai.fraunhofer.de/ontology/schizophrenia#N-methyl-D-aspartate_receptor_hypofunction_model	IAO:0000115	
-WARN	missing_definition	https://bio.scai.fraunhofer.de/ontology/schizophrenia#NR1_knockdown_mouse_model	IAO:0000115	
-WARN	missing_definition	https://bio.scai.fraunhofer.de/ontology/schizophrenia#NR1_knockout_mouse_model	IAO:0000115	
-WARN	missing_definition	https://bio.scai.fraunhofer.de/ontology/schizophrenia#NR2A_knockout_mouse_model	IAO:0000115	
-WARN	missing_definition	https://bio.scai.fraunhofer.de/ontology/schizophrenia#NR2B_knockout_mouse_model	IAO:0000115	
-WARN	missing_definition	https://bio.scai.fraunhofer.de/ontology/schizophrenia#NR4A1_knockout_mouse_model	IAO:0000115	
-WARN	missing_definition	https://bio.scai.fraunhofer.de/ontology/schizophrenia#NR4A2_knockout_mouse_model	IAO:0000115	
-WARN	missing_definition	https://bio.scai.fraunhofer.de/ontology/schizophrenia#NRG1_null_mutant_mouse_model	IAO:0000115	
-WARN	missing_definition	https://bio.scai.fraunhofer.de/ontology/schizophrenia#NTRK2_knockout_mouse_model	IAO:0000115	
-WARN	missing_definition	https://bio.scai.fraunhofer.de/ontology/schizophrenia#OXTR_knockout_mouse_model	IAO:0000115	
-WARN	missing_definition	https://bio.scai.fraunhofer.de/ontology/schizophrenia#PLCB1_knockout_mouse_model	IAO:0000115	
-WARN	missing_definition	https://bio.scai.fraunhofer.de/ontology/schizophrenia#PRODH_deficient_mouse_model	IAO:0000115	
-WARN	missing_definition	https://bio.scai.fraunhofer.de/ontology/schizophrenia#Penn_conditional_exclusion_test	IAO:0000115	
-WARN	missing_definition	https://bio.scai.fraunhofer.de/ontology/schizophrenia#Peters_delusion_inventory	IAO:0000115	
-WARN	missing_definition	https://bio.scai.fraunhofer.de/ontology/schizophrenia#RELN_deletion_mouse_model	IAO:0000115	
-WARN	missing_definition	https://bio.scai.fraunhofer.de/ontology/schizophrenia#SCHNURRI-2_knockout_mouse_model	IAO:0000115	
-WARN	missing_definition	https://bio.scai.fraunhofer.de/ontology/schizophrenia#SEPT5_knockout_mouse_model	IAO:0000115	
-WARN	missing_definition	https://bio.scai.fraunhofer.de/ontology/schizophrenia#SNAP25_mutant_mouse_model	IAO:0000115	
-WARN	missing_definition	https://bio.scai.fraunhofer.de/ontology/schizophrenia#TAP1_knockout_mouse_model	IAO:0000115	
-WARN	missing_definition	https://bio.scai.fraunhofer.de/ontology/schizophrenia#Wechsler_abbreviated_scale_of_intelligence	IAO:0000115	
-WARN	missing_definition	https://bio.scai.fraunhofer.de/ontology/schizophrenia#Wisconsin_card_sort_test	IAO:0000115	
-WARN	missing_definition	https://bio.scai.fraunhofer.de/ontology/schizophrenia#ZDHHC8_deficient_mouse_model	IAO:0000115	
-WARN	missing_definition	https://bio.scai.fraunhofer.de/ontology/schizophrenia#aberrant_salience_model	IAO:0000115	
-WARN	missing_definition	https://bio.scai.fraunhofer.de/ontology/schizophrenia#abnormal_planum_temporale_asymmetry	IAO:0000115	
-WARN	missing_definition	https://bio.scai.fraunhofer.de/ontology/schizophrenia#abstraction	IAO:0000115	
-WARN	missing_definition	https://bio.scai.fraunhofer.de/ontology/schizophrenia#acute_schizophrenic_episode	IAO:0000115	
-WARN	missing_definition	https://bio.scai.fraunhofer.de/ontology/schizophrenia#addiction_severity_index	IAO:0000115	
-WARN	missing_definition	https://bio.scai.fraunhofer.de/ontology/schizophrenia#aggression_questionnaire	IAO:0000115	
-WARN	missing_definition	https://bio.scai.fraunhofer.de/ontology/schizophrenia#amphetamine_model	IAO:0000115	
-WARN	missing_definition	https://bio.scai.fraunhofer.de/ontology/schizophrenia#apomorphine_model	IAO:0000115	
-WARN	missing_definition	https://bio.scai.fraunhofer.de/ontology/schizophrenia#apomorphine_susceptible_rat	IAO:0000115	
-WARN	missing_definition	https://bio.scai.fraunhofer.de/ontology/schizophrenia#apomorphine_unsusceptible_rat	IAO:0000115	
-WARN	missing_definition	https://bio.scai.fraunhofer.de/ontology/schizophrenia#assertive_community_treatment	IAO:0000115	
-WARN	missing_definition	https://bio.scai.fraunhofer.de/ontology/schizophrenia#assessment_of_interpersonal_problem_solving_skills	IAO:0000115	
-WARN	missing_definition	https://bio.scai.fraunhofer.de/ontology/schizophrenia#attractor_network_model	IAO:0000115	
-WARN	missing_definition	https://bio.scai.fraunhofer.de/ontology/schizophrenia#barriers_to_employment_and_coping_efficay_scale	IAO:0000115	
-WARN	missing_definition	https://bio.scai.fraunhofer.de/ontology/schizophrenia#behavior_and_symptom_identification_scale	IAO:0000115	
-WARN	missing_definition	https://bio.scai.fraunhofer.de/ontology/schizophrenia#behavioral_weight_loss_program	IAO:0000115	
-WARN	missing_definition	https://bio.scai.fraunhofer.de/ontology/schizophrenia#blood_toxicity_screening	IAO:0000115	
-WARN	missing_definition	https://bio.scai.fraunhofer.de/ontology/schizophrenia#borna_virus_disease_model	IAO:0000115	
-WARN	missing_definition	https://bio.scai.fraunhofer.de/ontology/schizophrenia#brain_fitness_program	IAO:0000115	
-WARN	missing_definition	https://bio.scai.fraunhofer.de/ontology/schizophrenia#brief_negative_symptom_scale	IAO:0000115	
-WARN	missing_definition	https://bio.scai.fraunhofer.de/ontology/schizophrenia#cannabis_model	IAO:0000115	
-WARN	missing_definition	https://bio.scai.fraunhofer.de/ontology/schizophrenia#childhood_parental_loss	IAO:0000115	
-WARN	missing_definition	https://bio.scai.fraunhofer.de/ontology/schizophrenia#childhood_risk_factor	IAO:0000115	
-WARN	missing_definition	https://bio.scai.fraunhofer.de/ontology/schizophrenia#childhood_stress	IAO:0000115	
-WARN	missing_definition	https://bio.scai.fraunhofer.de/ontology/schizophrenia#chlorpyrifos_model	IAO:0000115	
-WARN	missing_definition	https://bio.scai.fraunhofer.de/ontology/schizophrenia#client_assessment_of_strengths,_interests_and_goals	IAO:0000115	
-WARN	missing_definition	https://bio.scai.fraunhofer.de/ontology/schizophrenia#clinical_global_impression-schizophrenia_scale	IAO:0000115	
-WARN	missing_definition	https://bio.scai.fraunhofer.de/ontology/schizophrenia#clinician_rating_scale	IAO:0000115	
-WARN	missing_definition	https://bio.scai.fraunhofer.de/ontology/schizophrenia#cognitive_adaptation_training	IAO:0000115	
-WARN	missing_definition	https://bio.scai.fraunhofer.de/ontology/schizophrenia#cognitive_assessment_interview	IAO:0000115	
-WARN	missing_definition	https://bio.scai.fraunhofer.de/ontology/schizophrenia#cognitive_rehabilitation	IAO:0000115	
-WARN	missing_definition	https://bio.scai.fraunhofer.de/ontology/schizophrenia#cognitive_remediation	IAO:0000115	
-WARN	missing_definition	https://bio.scai.fraunhofer.de/ontology/schizophrenia#cognitive_training	IAO:0000115	
-WARN	missing_definition	https://bio.scai.fraunhofer.de/ontology/schizophrenia#composite_international_diagnostic_interview	IAO:0000115	
-WARN	missing_definition	https://bio.scai.fraunhofer.de/ontology/schizophrenia#comprehensive_assessment_of_at-risk_mental_state	IAO:0000115	
-WARN	missing_definition	https://bio.scai.fraunhofer.de/ontology/schizophrenia#comprehensive_measure_of_psychosocial_functioning	IAO:0000115	
-WARN	missing_definition	https://bio.scai.fraunhofer.de/ontology/schizophrenia#deficit_schizophrenia	IAO:0000115	
-WARN	missing_definition	https://bio.scai.fraunhofer.de/ontology/schizophrenia#diagnostic_interviewing	IAO:0000115	
-WARN	missing_definition	https://bio.scai.fraunhofer.de/ontology/schizophrenia#dialectical_behavior_therapy	IAO:0000115	
-WARN	missing_definition	https://bio.scai.fraunhofer.de/ontology/schizophrenia#distraction_technique	IAO:0000115	
-WARN	missing_definition	https://bio.scai.fraunhofer.de/ontology/schizophrenia#dizocilpine_model	IAO:0000115	
-WARN	missing_definition	https://bio.scai.fraunhofer.de/ontology/schizophrenia#domain-specific_assessment_of_psychosocial_functioning	IAO:0000115	
-WARN	missing_definition	https://bio.scai.fraunhofer.de/ontology/schizophrenia#dopamine_hypothesis_model	IAO:0000115	
-WARN	missing_definition	https://bio.scai.fraunhofer.de/ontology/schizophrenia#dopaminergic_model	IAO:0000115	
-WARN	missing_definition	https://bio.scai.fraunhofer.de/ontology/schizophrenia#drug-induced_model	IAO:0000115	
-WARN	missing_definition	https://bio.scai.fraunhofer.de/ontology/schizophrenia#drug_abuse_model	IAO:0000115	
-WARN	missing_definition	https://bio.scai.fraunhofer.de/ontology/schizophrenia#dysconnection_hypothesis_model	IAO:0000115	
-WARN	missing_definition	https://bio.scai.fraunhofer.de/ontology/schizophrenia#electrode_placement_system	IAO:0000115	
-WARN	missing_definition	https://bio.scai.fraunhofer.de/ontology/schizophrenia#endocannabinoid_model	IAO:0000115	
-WARN	missing_definition	https://bio.scai.fraunhofer.de/ontology/schizophrenia#environmental_model	IAO:0000115	
-WARN	missing_definition	https://bio.scai.fraunhofer.de/ontology/schizophrenia#environmental_toxin_model	IAO:0000115	
-WARN	missing_definition	https://bio.scai.fraunhofer.de/ontology/schizophrenia#family-aided_assertive_community_treatment	IAO:0000115	
-WARN	missing_definition	https://bio.scai.fraunhofer.de/ontology/schizophrenia#family_psychoeducation	IAO:0000115	
-WARN	missing_definition	https://bio.scai.fraunhofer.de/ontology/schizophrenia#gamma-aminobutyric_acid-A_receptor_antagonist_model	IAO:0000115	
-WARN	missing_definition	https://bio.scai.fraunhofer.de/ontology/schizophrenia#gamma-aminobutyric_acid_hypothesis_model	IAO:0000115	
-WARN	missing_definition	https://bio.scai.fraunhofer.de/ontology/schizophrenia#gamma-aminobutyric_acidergic_model	IAO:0000115	
-WARN	missing_definition	https://bio.scai.fraunhofer.de/ontology/schizophrenia#gene-environment_interaction_model	IAO:0000115	
-WARN	missing_definition	https://bio.scai.fraunhofer.de/ontology/schizophrenia#global_assessment_of_functioning	IAO:0000115	
-WARN	missing_definition	https://bio.scai.fraunhofer.de/ontology/schizophrenia#global_measure_of_psychosocial_functioning	IAO:0000115	
-WARN	missing_definition	https://bio.scai.fraunhofer.de/ontology/schizophrenia#glutamate_hypothesis_model	IAO:0000115	
-WARN	missing_definition	https://bio.scai.fraunhofer.de/ontology/schizophrenia#glutamatergic_dysfunction	IAO:0000115	
-WARN	missing_definition	https://bio.scai.fraunhofer.de/ontology/schizophrenia#glutamatergic_model	IAO:0000115	
-WARN	missing_definition	https://bio.scai.fraunhofer.de/ontology/schizophrenia#group_psychoeducation	IAO:0000115	
-WARN	missing_definition	https://bio.scai.fraunhofer.de/ontology/schizophrenia#hair_analysis	IAO:0000115	
-WARN	missing_definition	https://bio.scai.fraunhofer.de/ontology/schizophrenia#human_endogenous_retroviral_infection	IAO:0000115	
-WARN	missing_definition	https://bio.scai.fraunhofer.de/ontology/schizophrenia#hyperdopaminergia	IAO:0000115	
-WARN	missing_definition	https://bio.scai.fraunhofer.de/ontology/schizophrenia#hypoactivity_of_dorsolateral_prefrontal_cortex	IAO:0000115	
-WARN	missing_definition	https://bio.scai.fraunhofer.de/ontology/schizophrenia#hypodopaminergia	IAO:0000115	
-WARN	missing_definition	https://bio.scai.fraunhofer.de/ontology/schizophrenia#hypothalamic-pituitary-adrenal_axis_dysfunction	IAO:0000115	
-WARN	missing_definition	https://bio.scai.fraunhofer.de/ontology/schizophrenia#identical_pairs_continuous_performance_test	IAO:0000115	
-WARN	missing_definition	https://bio.scai.fraunhofer.de/ontology/schizophrenia#immune_activation_model	IAO:0000115	
-WARN	missing_definition	https://bio.scai.fraunhofer.de/ontology/schizophrenia#increased_soluble_interleukin-2_receptor	IAO:0000115	
-WARN	missing_definition	https://bio.scai.fraunhofer.de/ontology/schizophrenia#independent_living_skills_survey	IAO:0000115	
-WARN	missing_definition	https://bio.scai.fraunhofer.de/ontology/schizophrenia#influenza_A/WSN/33_virus_model	IAO:0000115	
-WARN	missing_definition	https://bio.scai.fraunhofer.de/ontology/schizophrenia#influenza_model	IAO:0000115	
-WARN	missing_definition	https://bio.scai.fraunhofer.de/ontology/schizophrenia#insulin_shock_therapy	IAO:0000115	
-WARN	missing_definition	https://bio.scai.fraunhofer.de/ontology/schizophrenia#integrated_psychological_therapy	IAO:0000115	
-WARN	missing_definition	https://bio.scai.fraunhofer.de/ontology/schizophrenia#interpersonal_and_social_rhythm_therapy	IAO:0000115	
-WARN	missing_definition	https://bio.scai.fraunhofer.de/ontology/schizophrenia#ketamine_model	IAO:0000115	
-WARN	missing_definition	https://bio.scai.fraunhofer.de/ontology/schizophrenia#lead(2+)_ion_model	IAO:0000115	
-WARN	missing_definition	https://bio.scai.fraunhofer.de/ontology/schizophrenia#lipopolysaccharide_model	IAO:0000115	
-WARN	missing_definition	https://bio.scai.fraunhofer.de/ontology/schizophrenia#low_intelligence_quotient	IAO:0000115	
-WARN	missing_definition	https://bio.scai.fraunhofer.de/ontology/schizophrenia#lysergic_acid_diethylamide_model	IAO:0000115	
-WARN	missing_definition	https://bio.scai.fraunhofer.de/ontology/schizophrenia#maternal_diabetes_model	IAO:0000115	
-WARN	missing_definition	https://bio.scai.fraunhofer.de/ontology/schizophrenia#maternal_malnutrition	IAO:0000115	
-WARN	missing_definition	https://bio.scai.fraunhofer.de/ontology/schizophrenia#maternal_smoking	IAO:0000115	
-WARN	missing_definition	https://bio.scai.fraunhofer.de/ontology/schizophrenia#medial_prefrontal_cortex	IAO:0000115	
-WARN	missing_definition	https://bio.scai.fraunhofer.de/ontology/schizophrenia#mental_status_examination	IAO:0000115	
-WARN	missing_definition	https://bio.scai.fraunhofer.de/ontology/schizophrenia#mescaline_model	IAO:0000115	
-WARN	missing_definition	https://bio.scai.fraunhofer.de/ontology/schizophrenia#metacognitive_training	IAO:0000115	
-WARN	missing_definition	https://bio.scai.fraunhofer.de/ontology/schizophrenia#methylazomethanol_model	IAO:0000115	
-WARN	missing_definition	https://bio.scai.fraunhofer.de/ontology/schizophrenia#methylphenidate_model	IAO:0000115	
-WARN	missing_definition	https://bio.scai.fraunhofer.de/ontology/schizophrenia#microcircuit_model	IAO:0000115	
-WARN	missing_definition	https://bio.scai.fraunhofer.de/ontology/schizophrenia#mood_disorder_questionnaire	IAO:0000115	
-WARN	missing_definition	https://bio.scai.fraunhofer.de/ontology/schizophrenia#negative_life_event	IAO:0000115	
-WARN	missing_definition	https://bio.scai.fraunhofer.de/ontology/schizophrenia#neonatal_morbidity	IAO:0000115	
-WARN	missing_definition	https://bio.scai.fraunhofer.de/ontology/schizophrenia#neonatal_ventral_hippocampal_lesion_model	IAO:0000115	
-WARN	missing_definition	https://bio.scai.fraunhofer.de/ontology/schizophrenia#nervous_breakdown	IAO:0000115	
-WARN	missing_definition	https://bio.scai.fraunhofer.de/ontology/schizophrenia#neurodevelopmental_model	IAO:0000115	
-WARN	missing_definition	https://bio.scai.fraunhofer.de/ontology/schizophrenia#nidotherapy	IAO:0000115	
-WARN	missing_definition	https://bio.scai.fraunhofer.de/ontology/schizophrenia#night_eating_syndrome	IAO:0000115	
-WARN	missing_definition	https://bio.scai.fraunhofer.de/ontology/schizophrenia#non_invasive_brain_stimulation	IAO:0000115	
-WARN	missing_definition	https://bio.scai.fraunhofer.de/ontology/schizophrenia#nondeficit_schizophrenia	IAO:0000115	
-WARN	missing_definition	https://bio.scai.fraunhofer.de/ontology/schizophrenia#obstetric_complication	IAO:0000115	
-WARN	missing_definition	https://bio.scai.fraunhofer.de/ontology/schizophrenia#obstetric_complication_model	IAO:0000115	
-WARN	missing_definition	https://bio.scai.fraunhofer.de/ontology/schizophrenia#older_age_of_the_father	IAO:0000115	
-WARN	missing_definition	https://bio.scai.fraunhofer.de/ontology/schizophrenia#oneirophrenia	IAO:0000115	
-WARN	missing_definition	https://bio.scai.fraunhofer.de/ontology/schizophrenia#parietal_association_cortex	IAO:0000115	
-WARN	missing_definition	https://bio.scai.fraunhofer.de/ontology/schizophrenia#parvalbumin-positive_interneurons_dysfunction	IAO:0000115	
-WARN	missing_definition	https://bio.scai.fraunhofer.de/ontology/schizophrenia#perinatal_hypoxia_model	IAO:0000115	
-WARN	missing_definition	https://bio.scai.fraunhofer.de/ontology/schizophrenia#perinatal_infection	IAO:0000115	
-WARN	missing_definition	https://bio.scai.fraunhofer.de/ontology/schizophrenia#perinatal_risk_factor	IAO:0000115	
-WARN	missing_definition	https://bio.scai.fraunhofer.de/ontology/schizophrenia#phencyclidine_model	IAO:0000115	
-WARN	missing_definition	https://bio.scai.fraunhofer.de/ontology/schizophrenia#picrotoxin_model	IAO:0000115	
-WARN	missing_definition	https://bio.scai.fraunhofer.de/ontology/schizophrenia#polyriboinosinic–polyribocytidilic_acid_model	IAO:0000115	
-WARN	missing_definition	https://bio.scai.fraunhofer.de/ontology/schizophrenia#post-schizophrenic_depression	IAO:0000115	
-WARN	missing_definition	https://bio.scai.fraunhofer.de/ontology/schizophrenia#post-weaning_social_isolation_model	IAO:0000115	
-WARN	missing_definition	https://bio.scai.fraunhofer.de/ontology/schizophrenia#preeclampsia_model	IAO:0000115	
-WARN	missing_definition	https://bio.scai.fraunhofer.de/ontology/schizophrenia#prenatal_bacterial_infection	IAO:0000115	
-WARN	missing_definition	https://bio.scai.fraunhofer.de/ontology/schizophrenia#prenatal_maternal_stress	IAO:0000115	
-WARN	missing_definition	https://bio.scai.fraunhofer.de/ontology/schizophrenia#prenatal_risk_factor	IAO:0000115	
-WARN	missing_definition	https://bio.scai.fraunhofer.de/ontology/schizophrenia#prenatal_viral_infection	IAO:0000115	
-WARN	missing_definition	https://bio.scai.fraunhofer.de/ontology/schizophrenia#psychoeducational_training	IAO:0000115	
-WARN	missing_definition	https://bio.scai.fraunhofer.de/ontology/schizophrenia#psychological_stress_model	IAO:0000115	
-WARN	missing_definition	https://bio.scai.fraunhofer.de/ontology/schizophrenia#quality_of_life_scale	IAO:0000115	
-WARN	missing_definition	https://bio.scai.fraunhofer.de/ontology/schizophrenia#quantitative_systems_pharmacology_model	IAO:0000115	
-WARN	missing_definition	https://bio.scai.fraunhofer.de/ontology/schizophrenia#rapid_visual_information_processing_task	IAO:0000115	
-WARN	missing_definition	https://bio.scai.fraunhofer.de/ontology/schizophrenia#reduced_gray_matter_density	IAO:0000115	
-WARN	missing_definition	https://bio.scai.fraunhofer.de/ontology/schizophrenia#retinal_imaging	IAO:0000115	
-WARN	missing_definition	https://bio.scai.fraunhofer.de/ontology/schizophrenia#reward_prediction_error_model	IAO:0000115	
-WARN	missing_definition	https://bio.scai.fraunhofer.de/ontology/schizophrenia#scale_for_the_assessment_of_negative_symptoms	IAO:0000115	
-WARN	missing_definition	https://bio.scai.fraunhofer.de/ontology/schizophrenia#scale_for_the_assessment_of_positive_symptoms	IAO:0000115	
-WARN	missing_definition	https://bio.scai.fraunhofer.de/ontology/schizophrenia#schedule_for_affective_disorders_and_schizophrenia	IAO:0000115	
-WARN	missing_definition	https://bio.scai.fraunhofer.de/ontology/schizophrenia#schedule_for_deficit_syndrome	IAO:0000115	
-WARN	missing_definition	https://bio.scai.fraunhofer.de/ontology/schizophrenia#schizoaffective_disorder,_bipolar_type	IAO:0000115	
-WARN	missing_definition	https://bio.scai.fraunhofer.de/ontology/schizophrenia#schizophrenia_proneness_instrument,_adult_version	IAO:0000115	
-WARN	missing_definition	https://bio.scai.fraunhofer.de/ontology/schizophrenia#schizophrenia_proneness_instrument,_child_and_youth_version	IAO:0000115	
-WARN	missing_definition	https://bio.scai.fraunhofer.de/ontology/schizophrenia#season_of_birth	IAO:0000115	
-WARN	missing_definition	https://bio.scai.fraunhofer.de/ontology/schizophrenia#secondary_psychoses	IAO:0000115	
-WARN	missing_definition	https://bio.scai.fraunhofer.de/ontology/schizophrenia#sensory_gating_model	IAO:0000115	
-WARN	missing_definition	https://bio.scai.fraunhofer.de/ontology/schizophrenia#serotonergic_model	IAO:0000115	
-WARN	missing_definition	https://bio.scai.fraunhofer.de/ontology/schizophrenia#serum_lithium_measurement	IAO:0000115	
-WARN	missing_definition	https://bio.scai.fraunhofer.de/ontology/schizophrenia#signal-to-noise_ratio_model	IAO:0000115	
-WARN	missing_definition	https://bio.scai.fraunhofer.de/ontology/schizophrenia#simple_Hopfield_network	IAO:0000115	
-WARN	missing_definition	https://bio.scai.fraunhofer.de/ontology/schizophrenia#social_adversity	IAO:0000115	
-WARN	missing_definition	https://bio.scai.fraunhofer.de/ontology/schizophrenia#social_defeat	IAO:0000115	
-WARN	missing_definition	https://bio.scai.fraunhofer.de/ontology/schizophrenia#social_skills_training	IAO:0000115	
-WARN	missing_definition	https://bio.scai.fraunhofer.de/ontology/schizophrenia#spatial_capacity_delayed_response_test	IAO:0000115	
-WARN	missing_definition	https://bio.scai.fraunhofer.de/ontology/schizophrenia#stop_signal_task	IAO:0000115	
-WARN	missing_definition	https://bio.scai.fraunhofer.de/ontology/schizophrenia#stressful_life_event	IAO:0000115	
-WARN	missing_definition	https://bio.scai.fraunhofer.de/ontology/schizophrenia#structured_clinical_interview_for_diagnostic_and_statistical_manual_of_mental_disorder-IV	IAO:0000115	
-WARN	missing_definition	https://bio.scai.fraunhofer.de/ontology/schizophrenia#structured_interview_for_prodromal_syndrome	IAO:0000115	
-WARN	missing_definition	https://bio.scai.fraunhofer.de/ontology/schizophrenia#subcortical_limbic_hyperactivity	IAO:0000115	
-WARN	missing_definition	https://bio.scai.fraunhofer.de/ontology/schizophrenia#supportive_psychotherapy	IAO:0000115	
-WARN	missing_definition	https://bio.scai.fraunhofer.de/ontology/schizophrenia#symptoms_rating_scale	IAO:0000115	
-WARN	missing_definition	https://bio.scai.fraunhofer.de/ontology/schizophrenia#temperament_evaluation_of_Memphis,_Pisa,_Paris_and_San_Diego_autoquestionnaire	IAO:0000115	
-WARN	missing_definition	https://bio.scai.fraunhofer.de/ontology/schizophrenia#ten-ten_system	IAO:0000115	
-WARN	missing_definition	https://bio.scai.fraunhofer.de/ontology/schizophrenia#ten-twenty_system	IAO:0000115	
-WARN	missing_definition	https://bio.scai.fraunhofer.de/ontology/schizophrenia#three-layer_perceptron_model	IAO:0000115	
-WARN	missing_definition	https://bio.scai.fraunhofer.de/ontology/schizophrenia#tranquilizer_abuse	IAO:0000115	
-WARN	missing_definition	https://bio.scai.fraunhofer.de/ontology/schizophrenia#tuberoinfundibular_pathway	IAO:0000115	
-WARN	missing_definition	https://bio.scai.fraunhofer.de/ontology/schizophrenia#uncompetitive_N-methyl-D-aspartate_receptor_antagonist_model	IAO:0000115	
-WARN	missing_definition	https://bio.scai.fraunhofer.de/ontology/schizophrenia#urinary_toxicology_screening	IAO:0000115	
-WARN	missing_definition	https://bio.scai.fraunhofer.de/ontology/schizophrenia#verbal_learning_impairment	IAO:0000115	
-WARN	missing_definition	https://bio.scai.fraunhofer.de/ontology/schizophrenia#voxel-based_morphometry	IAO:0000115	
-WARN	missing_definition	https://bio.scai.fraunhofer.de/ontology/schizophrenia#web-based_and_electronic_screening_tool	IAO:0000115	
-WARN	missing_definition	https://bio.scai.fraunhofer.de/ontology/schizophrenia#white_matter_dysconnectivity	IAO:0000115	
-WARN	missing_definition	https://bio.scai.fraunhofer.de/ontology/schizophrenia#work_behavior_inventory	IAO:0000115	
-WARN	missing_definition	https://www.wikidata.org/wiki/Property:P1659	IAO:0000115	
-WARN	missing_definition	https://www.wikidata.org/wiki/Property:P486	IAO:0000115	
-WARN	duplicate_scoped_synonym	NCBITaxon:2759	oboInOwl:hasExactSynonym	eukaryotes
-WARN	duplicate_scoped_synonym	NCBITaxon:2759	oboInOwl:hasRelatedSynonym	eukaryotes
-WARN	duplicate_scoped_synonym	NCBITaxon:40674	oboInOwl:hasExactSynonym	mammals
-WARN	duplicate_scoped_synonym	NCBITaxon:40674	oboInOwl:hasRelatedSynonym	mammals
-WARN	duplicate_scoped_synonym	NCBITaxon:6231	oboInOwl:hasExactSynonym	nematodes
-WARN	duplicate_scoped_synonym	NCBITaxon:6231	oboInOwl:hasRelatedSynonym	nematodes
-WARN	duplicate_scoped_synonym	NCBITaxon:6656	oboInOwl:hasExactSynonym	arthropods
-WARN	duplicate_scoped_synonym	NCBITaxon:6656	oboInOwl:hasRelatedSynonym	arthropods
-WARN	duplicate_scoped_synonym	NCBITaxon:7742	oboInOwl:hasExactSynonym	vertebrates
-WARN	duplicate_scoped_synonym	NCBITaxon:7742	oboInOwl:hasRelatedSynonym	vertebrates
-WARN	duplicate_scoped_synonym	UBERON:0001018	oboInOwl:hasNarrowSynonym	nerve tract
-WARN	duplicate_scoped_synonym	UBERON:0001018	oboInOwl:hasRelatedSynonym	nerve tract
-WARN	duplicate_scoped_synonym	UBERON:0002769	oboInOwl:hasExactSynonym	gyrus temporalis superior
-WARN	duplicate_scoped_synonym	UBERON:0002769	oboInOwl:hasRelatedSynonym	gyrus temporalis superior
-WARN	duplicate_scoped_synonym	UBERON:0003883	oboInOwl:hasExactSynonym	CA3
-WARN	duplicate_scoped_synonym	UBERON:0003883	oboInOwl:hasExactSynonym	regio III cornus ammonis
-WARN	duplicate_scoped_synonym	UBERON:0003883	oboInOwl:hasRelatedSynonym	CA3
-WARN	duplicate_scoped_synonym	UBERON:0003883	oboInOwl:hasRelatedSynonym	regio III cornus ammonis
-WARN	duplicate_scoped_synonym	UBERON:0006101	oboInOwl:hasBroadSynonym	B09-24
-WARN	duplicate_scoped_synonym	UBERON:0006101	oboInOwl:hasExactSynonym	B09-24
-WARN	duplicate_scoped_synonym	UBERON:0006473	oboInOwl:hasBroadSynonym	B09-18
-WARN	duplicate_scoped_synonym	UBERON:0006473	oboInOwl:hasExactSynonym	B09-18
-WARN	duplicate_scoped_synonym	UBERON:0006481	oboInOwl:hasBroadSynonym	B09-44
-WARN	duplicate_scoped_synonym	UBERON:0006481	oboInOwl:hasExactSynonym	B09-44
-WARN	duplicate_scoped_synonym	UBERON:0006482	oboInOwl:hasBroadSynonym	B09-45
-WARN	duplicate_scoped_synonym	UBERON:0006482	oboInOwl:hasBroadSynonym	BA45
-WARN	duplicate_scoped_synonym	UBERON:0006482	oboInOwl:hasExactSynonym	B09-45
-WARN	duplicate_scoped_synonym	UBERON:0006482	oboInOwl:hasExactSynonym	BA45
-WARN	duplicate_scoped_synonym	UBERON:0006483	oboInOwl:hasBroadSynonym	B09-46
-WARN	duplicate_scoped_synonym	UBERON:0006483	oboInOwl:hasExactSynonym	B09-46
-WARN	duplicate_scoped_synonym	UBERON:0006483	oboInOwl:hasExactSynonym	middle frontal area 46
-WARN	duplicate_scoped_synonym	UBERON:0006483	oboInOwl:hasRelatedSynonym	middle frontal area 46
-WARN	duplicate_scoped_synonym	UBERON:0006484	oboInOwl:hasBroadSynonym	B09-47
-WARN	duplicate_scoped_synonym	UBERON:0006484	oboInOwl:hasExactSynonym	B09-47
-WARN	duplicate_scoped_synonym	UBERON:0013528	oboInOwl:hasBroadSynonym	B09-11
-WARN	duplicate_scoped_synonym	UBERON:0013528	oboInOwl:hasExactSynonym	B09-11
-WARN	duplicate_scoped_synonym	UBERON:0013528	oboInOwl:hasExactSynonym	area 11 of Brodmann
-WARN	duplicate_scoped_synonym	UBERON:0013528	oboInOwl:hasRelatedSynonym	area 11 of Brodmann
-WARN	duplicate_scoped_synonym	UBERON:0013539	oboInOwl:hasBroadSynonym	B09-8
-WARN	duplicate_scoped_synonym	UBERON:0013539	oboInOwl:hasExactSynonym	B09-8
-WARN	duplicate_scoped_synonym	UBERON:0013540	oboInOwl:hasBroadSynonym	B09-9
-WARN	duplicate_scoped_synonym	UBERON:0013540	oboInOwl:hasExactSynonym	B09-9
-WARN	duplicate_scoped_synonym	UBERON:0013541	oboInOwl:hasBroadSynonym	B09-10
-WARN	duplicate_scoped_synonym	UBERON:0013541	oboInOwl:hasExactSynonym	B09-10
-WARN	duplicate_scoped_synonym	UBERON:0013550	oboInOwl:hasBroadSynonym	B09-19
-WARN	duplicate_scoped_synonym	UBERON:0013550	oboInOwl:hasExactSynonym	B09-19
-WARN	duplicate_scoped_synonym	UBERON:0013551	oboInOwl:hasBroadSynonym	B09-20
-WARN	duplicate_scoped_synonym	UBERON:0013551	oboInOwl:hasExactSynonym	B09-20
-WARN	duplicate_scoped_synonym	UBERON:0013552	oboInOwl:hasBroadSynonym	B09-21
-WARN	duplicate_scoped_synonym	UBERON:0013552	oboInOwl:hasExactSynonym	B09-21
-WARN	duplicate_scoped_synonym	UBERON:0013553	oboInOwl:hasBroadSynonym	B09-22
-WARN	duplicate_scoped_synonym	UBERON:0013553	oboInOwl:hasExactSynonym	B09-22
-WARN	duplicate_scoped_synonym	UBERON:0013556	oboInOwl:hasBroadSynonym	B09-25
-WARN	duplicate_scoped_synonym	UBERON:0013556	oboInOwl:hasExactSynonym	B09-25
-WARN	duplicate_scoped_synonym	UBERON:0013560	oboInOwl:hasBroadSynonym	B09-32
-WARN	duplicate_scoped_synonym	UBERON:0013560	oboInOwl:hasExactSynonym	B09-32
+ERROR	missing_label	http://www.co-ode.org/ontologies/ont.owl#obsessive–compulsive	rdfs:label	
 WARN	duplicate_label_synonym	GO:0007610	oboInOwl:hasExactSynonym	behavior
 WARN	duplicate_label_synonym	HP:0000152	oboInOwl:hasExactSynonym	Abnormality of head or neck
 WARN	duplicate_label_synonym	HP:0000478	oboInOwl:hasExactSynonym	Abnormality of the eye
@@ -772,153 +322,145 @@ WARN	duplicate_label_synonym	UBERON:0013560	oboInOwl:hasExactSynonym	Brodmann (1
 WARN	duplicate_label_synonym	UBERON:0022438	oboInOwl:hasExactSynonym	rostral anterior cingulate cortex
 WARN	duplicate_label_synonym	UBERON:0022716	oboInOwl:hasExactSynonym	lateral orbital frontal cortex
 WARN	duplicate_label_synonym	oboInOwl:hasDbXref	oboInOwl:hasExactSynonym	database_cross_reference
-WARN	missing_subset_declaration	http://purl.oboInOwllibrary.org/oboInOwl/NCIT_C100110	rdfs:subPropertyOf	
-WARN	missing_subset_declaration	http://purl.oboInOwllibrary.org/oboInOwl/NCIT_C100129	rdfs:subPropertyOf	
-WARN	missing_subset_declaration	http://purl.oboInOwllibrary.org/oboInOwl/NCIT_C101858	rdfs:subPropertyOf	
-WARN	missing_subset_declaration	http://purl.oboInOwllibrary.org/oboInOwl/NCIT_C106039	rdfs:subPropertyOf	
-WARN	missing_subset_declaration	http://purl.oboInOwllibrary.org/oboInOwl/NCIT_C115302	rdfs:subPropertyOf	
-WARN	missing_subset_declaration	http://purl.oboInOwllibrary.org/oboInOwl/NCIT_C115304	rdfs:subPropertyOf	
-WARN	missing_subset_declaration	http://purl.oboInOwllibrary.org/oboInOwl/NCIT_C116105	rdfs:subPropertyOf	
-WARN	missing_subset_declaration	http://purl.oboInOwllibrary.org/oboInOwl/NCIT_C116106	rdfs:subPropertyOf	
-WARN	missing_subset_declaration	http://purl.oboInOwllibrary.org/oboInOwl/NCIT_C116977	rdfs:subPropertyOf	
-WARN	missing_subset_declaration	http://purl.oboInOwllibrary.org/oboInOwl/NCIT_C118168	rdfs:subPropertyOf	
-WARN	missing_subset_declaration	http://purl.oboInOwllibrary.org/oboInOwl/NCIT_C118169	rdfs:subPropertyOf	
-WARN	missing_subset_declaration	http://purl.oboInOwllibrary.org/oboInOwl/NCIT_C118464	rdfs:subPropertyOf	
-WARN	missing_subset_declaration	http://purl.oboInOwllibrary.org/oboInOwl/NCIT_C118466	rdfs:subPropertyOf	
-WARN	missing_subset_declaration	http://purl.oboInOwllibrary.org/oboInOwl/NCIT_C118468	rdfs:subPropertyOf	
-WARN	missing_subset_declaration	http://purl.oboInOwllibrary.org/oboInOwl/NCIT_C118970	rdfs:subPropertyOf	
-WARN	missing_subset_declaration	http://purl.oboInOwllibrary.org/oboInOwl/NCIT_C118971	rdfs:subPropertyOf	
-WARN	missing_subset_declaration	http://purl.oboInOwllibrary.org/oboInOwl/NCIT_C120166	rdfs:subPropertyOf	
-WARN	missing_subset_declaration	http://purl.oboInOwllibrary.org/oboInOwl/NCIT_C120532	rdfs:subPropertyOf	
-WARN	missing_subset_declaration	http://purl.oboInOwllibrary.org/oboInOwl/NCIT_C120533	rdfs:subPropertyOf	
-WARN	missing_subset_declaration	http://purl.oboInOwllibrary.org/oboInOwl/NCIT_C121270	rdfs:subPropertyOf	
-WARN	missing_subset_declaration	http://purl.oboInOwllibrary.org/oboInOwl/NCIT_C121522	rdfs:subPropertyOf	
-WARN	missing_subset_declaration	http://purl.oboInOwllibrary.org/oboInOwl/NCIT_C124307	rdfs:subPropertyOf	
-WARN	missing_subset_declaration	http://purl.oboInOwllibrary.org/oboInOwl/NCIT_C125481	rdfs:subPropertyOf	
-WARN	missing_subset_declaration	http://purl.oboInOwllibrary.org/oboInOwl/NCIT_C128701	rdfs:subPropertyOf	
-WARN	missing_subset_declaration	http://purl.oboInOwllibrary.org/oboInOwl/NCIT_C128706	rdfs:subPropertyOf	
-WARN	missing_subset_declaration	http://purl.oboInOwllibrary.org/oboInOwl/NCIT_C132298	rdfs:subPropertyOf	
-WARN	missing_subset_declaration	http://purl.oboInOwllibrary.org/oboInOwl/NCIT_C142799	rdfs:subPropertyOf	
-WARN	missing_subset_declaration	http://purl.oboInOwllibrary.org/oboInOwl/NCIT_C147067	rdfs:subPropertyOf	
-WARN	missing_subset_declaration	http://purl.oboInOwllibrary.org/oboInOwl/NCIT_C155946	rdfs:subPropertyOf	
-WARN	missing_subset_declaration	http://purl.oboInOwllibrary.org/oboInOwl/NCIT_C156952	rdfs:subPropertyOf	
-WARN	missing_subset_declaration	http://purl.oboInOwllibrary.org/oboInOwl/NCIT_C156953	rdfs:subPropertyOf	
-WARN	missing_subset_declaration	http://purl.oboInOwllibrary.org/oboInOwl/NCIT_C156954	rdfs:subPropertyOf	
-WARN	missing_subset_declaration	http://purl.oboInOwllibrary.org/oboInOwl/NCIT_C157711	rdfs:subPropertyOf	
-WARN	missing_subset_declaration	http://purl.oboInOwllibrary.org/oboInOwl/NCIT_C158034	rdfs:subPropertyOf	
-WARN	missing_subset_declaration	http://purl.oboInOwllibrary.org/oboInOwl/NCIT_C158035	rdfs:subPropertyOf	
-WARN	missing_subset_declaration	http://purl.oboInOwllibrary.org/oboInOwl/NCIT_C158037	rdfs:subPropertyOf	
-WARN	missing_subset_declaration	http://purl.oboInOwllibrary.org/oboInOwl/NCIT_C158520	rdfs:subPropertyOf	
-WARN	missing_subset_declaration	http://purl.oboInOwllibrary.org/oboInOwl/NCIT_C159007	rdfs:subPropertyOf	
-WARN	missing_subset_declaration	http://purl.oboInOwllibrary.org/oboInOwl/NCIT_C159028	rdfs:subPropertyOf	
-WARN	missing_subset_declaration	http://purl.oboInOwllibrary.org/oboInOwl/NCIT_C159074	rdfs:subPropertyOf	
-WARN	missing_subset_declaration	http://purl.oboInOwllibrary.org/oboInOwl/NCIT_C159079	rdfs:subPropertyOf	
-WARN	missing_subset_declaration	http://purl.oboInOwllibrary.org/oboInOwl/NCIT_C159125	rdfs:subPropertyOf	
-WARN	missing_subset_declaration	http://purl.oboInOwllibrary.org/oboInOwl/NCIT_C159339	rdfs:subPropertyOf	
-WARN	missing_subset_declaration	http://purl.oboInOwllibrary.org/oboInOwl/NCIT_C159414	rdfs:subPropertyOf	
-WARN	missing_subset_declaration	http://purl.oboInOwllibrary.org/oboInOwl/NCIT_C159418	rdfs:subPropertyOf	
-WARN	missing_subset_declaration	http://purl.oboInOwllibrary.org/oboInOwl/NCIT_C159501	rdfs:subPropertyOf	
-WARN	missing_subset_declaration	http://purl.oboInOwllibrary.org/oboInOwl/NCIT_C159502	rdfs:subPropertyOf	
-WARN	missing_subset_declaration	http://purl.oboInOwllibrary.org/oboInOwl/NCIT_C162989	rdfs:subPropertyOf	
-WARN	missing_subset_declaration	http://purl.oboInOwllibrary.org/oboInOwl/NCIT_C165451	rdfs:subPropertyOf	
-WARN	missing_subset_declaration	http://purl.oboInOwllibrary.org/oboInOwl/NCIT_C166373	rdfs:subPropertyOf	
-WARN	missing_subset_declaration	http://purl.oboInOwllibrary.org/oboInOwl/NCIT_C167409	rdfs:subPropertyOf	
-WARN	missing_subset_declaration	http://purl.oboInOwllibrary.org/oboInOwl/NCIT_C171094	rdfs:subPropertyOf	
-WARN	missing_subset_declaration	http://purl.oboInOwllibrary.org/oboInOwl/NCIT_C171122	rdfs:subPropertyOf	
-WARN	missing_subset_declaration	http://purl.oboInOwllibrary.org/oboInOwl/NCIT_C173209	rdfs:subPropertyOf	
-WARN	missing_subset_declaration	http://purl.oboInOwllibrary.org/oboInOwl/NCIT_C173232	rdfs:subPropertyOf	
-WARN	missing_subset_declaration	http://purl.oboInOwllibrary.org/oboInOwl/NCIT_C173233	rdfs:subPropertyOf	
-WARN	missing_subset_declaration	http://purl.oboInOwllibrary.org/oboInOwl/NCIT_C174019	rdfs:subPropertyOf	
-WARN	missing_subset_declaration	http://purl.oboInOwllibrary.org/oboInOwl/NCIT_C174237	rdfs:subPropertyOf	
-WARN	missing_subset_declaration	http://purl.oboInOwllibrary.org/oboInOwl/NCIT_C174250	rdfs:subPropertyOf	
-WARN	missing_subset_declaration	http://purl.oboInOwllibrary.org/oboInOwl/NCIT_C174252	rdfs:subPropertyOf	
-WARN	missing_subset_declaration	http://purl.oboInOwllibrary.org/oboInOwl/NCIT_C174261	rdfs:subPropertyOf	
-WARN	missing_subset_declaration	http://purl.oboInOwllibrary.org/oboInOwl/NCIT_C174262	rdfs:subPropertyOf	
-WARN	missing_subset_declaration	http://purl.oboInOwllibrary.org/oboInOwl/NCIT_C176424	rdfs:subPropertyOf	
-WARN	missing_subset_declaration	http://purl.oboInOwllibrary.org/oboInOwl/NCIT_C177383	rdfs:subPropertyOf	
-WARN	missing_subset_declaration	http://purl.oboInOwllibrary.org/oboInOwl/NCIT_C177393	rdfs:subPropertyOf	
-WARN	missing_subset_declaration	http://purl.oboInOwllibrary.org/oboInOwl/NCIT_C177394	rdfs:subPropertyOf	
-WARN	missing_subset_declaration	http://purl.oboInOwllibrary.org/oboInOwl/NCIT_C177397	rdfs:subPropertyOf	
-WARN	missing_subset_declaration	http://purl.oboInOwllibrary.org/oboInOwl/NCIT_C177401	rdfs:subPropertyOf	
-WARN	missing_subset_declaration	http://purl.oboInOwllibrary.org/oboInOwl/NCIT_C177407	rdfs:subPropertyOf	
-WARN	missing_subset_declaration	http://purl.oboInOwllibrary.org/oboInOwl/NCIT_C177536	rdfs:subPropertyOf	
-WARN	missing_subset_declaration	http://purl.oboInOwllibrary.org/oboInOwl/NCIT_C177537	rdfs:subPropertyOf	
-WARN	missing_subset_declaration	http://purl.oboInOwllibrary.org/oboInOwl/NCIT_C178115	rdfs:subPropertyOf	
-WARN	missing_subset_declaration	http://purl.oboInOwllibrary.org/oboInOwl/NCIT_C178124	rdfs:subPropertyOf	
-WARN	missing_subset_declaration	http://purl.oboInOwllibrary.org/oboInOwl/NCIT_C178125	rdfs:subPropertyOf	
-WARN	missing_subset_declaration	http://purl.oboInOwllibrary.org/oboInOwl/NCIT_C178127	rdfs:subPropertyOf	
-WARN	missing_subset_declaration	http://purl.oboInOwllibrary.org/oboInOwl/NCIT_C178718	rdfs:subPropertyOf	
-WARN	missing_subset_declaration	http://purl.oboInOwllibrary.org/oboInOwl/NCIT_C179026	rdfs:subPropertyOf	
-WARN	missing_subset_declaration	http://purl.oboInOwllibrary.org/oboInOwl/NCIT_C19752	rdfs:subPropertyOf	
-WARN	missing_subset_declaration	http://purl.oboInOwllibrary.org/oboInOwl/NCIT_C54447	rdfs:subPropertyOf	
-WARN	missing_subset_declaration	http://purl.oboInOwllibrary.org/oboInOwl/NCIT_C54450	rdfs:subPropertyOf	
-WARN	missing_subset_declaration	http://purl.oboInOwllibrary.org/oboInOwl/NCIT_C54583	rdfs:subPropertyOf	
-WARN	missing_subset_declaration	http://purl.oboInOwllibrary.org/oboInOwl/NCIT_C61410	rdfs:subPropertyOf	
-WARN	missing_subset_declaration	http://purl.oboInOwllibrary.org/oboInOwl/NCIT_C62596	rdfs:subPropertyOf	
-WARN	missing_subset_declaration	http://purl.oboInOwllibrary.org/oboInOwl/NCIT_C65047	rdfs:subPropertyOf	
-WARN	missing_subset_declaration	http://purl.oboInOwllibrary.org/oboInOwl/NCIT_C66741	rdfs:subPropertyOf	
-WARN	missing_subset_declaration	http://purl.oboInOwllibrary.org/oboInOwl/NCIT_C66830	rdfs:subPropertyOf	
-WARN	missing_subset_declaration	http://purl.oboInOwllibrary.org/oboInOwl/NCIT_C67153	rdfs:subPropertyOf	
-WARN	missing_subset_declaration	http://purl.oboInOwllibrary.org/oboInOwl/NCIT_C67154	rdfs:subPropertyOf	
-WARN	missing_subset_declaration	http://purl.oboInOwllibrary.org/oboInOwl/NCIT_C67497	rdfs:subPropertyOf	
-WARN	missing_subset_declaration	http://purl.oboInOwllibrary.org/oboInOwl/NCIT_C77526	rdfs:subPropertyOf	
-WARN	missing_subset_declaration	http://purl.oboInOwllibrary.org/oboInOwl/NCIT_C82590	rdfs:subPropertyOf	
-WARN	missing_subset_declaration	http://purl.oboInOwllibrary.org/oboInOwl/NCIT_C83188	rdfs:subPropertyOf	
-WARN	missing_subset_declaration	http://purl.oboInOwllibrary.org/oboInOwl/NCIT_C85492	rdfs:subPropertyOf	
-WARN	missing_subset_declaration	http://purl.oboInOwllibrary.org/oboInOwl/NCIT_C89415	rdfs:subPropertyOf	
-WARN	missing_subset_declaration	http://purl.oboInOwllibrary.org/oboInOwl/NCIT_C89506	rdfs:subPropertyOf	
-WARN	missing_subset_declaration	http://purl.oboInOwllibrary.org/oboInOwl/NCIT_C89961	rdfs:subPropertyOf	
-WARN	missing_subset_declaration	http://purl.oboInOwllibrary.org/oboInOwl/NCIT_C89962	rdfs:subPropertyOf	
-WARN	missing_subset_declaration	http://purl.oboInOwllibrary.org/oboInOwl/NCIT_C90007	rdfs:subPropertyOf	
-WARN	missing_subset_declaration	http://purl.oboInOwllibrary.org/oboInOwl/NCIT_C90009	rdfs:subPropertyOf	
-WARN	missing_subset_declaration	http://purl.oboInOwllibrary.org/oboInOwl/NCIT_C90259	rdfs:subPropertyOf	
-WARN	missing_subset_declaration	http://purl.oboInOwllibrary.org/oboInOwl/NCIT_C91101	rdfs:subPropertyOf	
-WARN	missing_subset_declaration	http://purl.oboInOwllibrary.org/oboInOwl/NCIT_C97150	rdfs:subPropertyOf	
-WARN	missing_subset_declaration	http://purl.oboInOwllibrary.org/oboInOwl/NCIT_C99147	rdfs:subPropertyOf	
-WARN	missing_subset_declaration	http://purl.oboInOwllibrary.org/oboInOwl/chebi#3_STAR	rdfs:subPropertyOf	
-WARN	missing_subset_declaration	http://purl.oboInOwllibrary.org/oboInOwl/doid#DO_AGR_slim	rdfs:subPropertyOf	
-WARN	missing_subset_declaration	http://purl.oboInOwllibrary.org/oboInOwl/doid#DO_CFDE_slim	rdfs:subPropertyOf	
-WARN	missing_subset_declaration	http://purl.oboInOwllibrary.org/oboInOwl/doid#DO_FlyBase_slim	rdfs:subPropertyOf	
-WARN	missing_subset_declaration	http://purl.oboInOwllibrary.org/oboInOwl/doid#DO_GXD_slim	rdfs:subPropertyOf	
-WARN	missing_subset_declaration	http://purl.oboInOwllibrary.org/oboInOwl/doid#DO_MGI_slim	rdfs:subPropertyOf	
-WARN	missing_subset_declaration	http://purl.oboInOwllibrary.org/oboInOwl/doid#DO_RAD_slim	rdfs:subPropertyOf	
-WARN	missing_subset_declaration	http://purl.oboInOwllibrary.org/oboInOwl/doid#DO_cancer_slim	rdfs:subPropertyOf	
-WARN	missing_subset_declaration	http://purl.oboInOwllibrary.org/oboInOwl/doid#DO_rare_slim	rdfs:subPropertyOf	
-WARN	missing_subset_declaration	http://purl.oboInOwllibrary.org/oboInOwl/doid#NCIthesaurus	rdfs:subPropertyOf	
-WARN	missing_subset_declaration	http://purl.oboInOwllibrary.org/oboInOwl/doid#sexually_transmitted_infectious_disease	rdfs:subPropertyOf	
-WARN	missing_subset_declaration	http://purl.oboInOwllibrary.org/oboInOwl/doid#zoonotic_infectious_disease	rdfs:subPropertyOf	
-WARN	missing_subset_declaration	http://purl.oboInOwllibrary.org/oboInOwl/go#gocheck_do_not_manually_annotate	rdfs:subPropertyOf	
-WARN	missing_subset_declaration	http://purl.oboInOwllibrary.org/oboInOwl/go#goslim_agr	rdfs:subPropertyOf	
-WARN	missing_subset_declaration	http://purl.oboInOwllibrary.org/oboInOwl/go#goslim_aspergillus	rdfs:subPropertyOf	
-WARN	missing_subset_declaration	http://purl.oboInOwllibrary.org/oboInOwl/go#goslim_candida	rdfs:subPropertyOf	
-WARN	missing_subset_declaration	http://purl.oboInOwllibrary.org/oboInOwl/go#goslim_chembl	rdfs:subPropertyOf	
-WARN	missing_subset_declaration	http://purl.oboInOwllibrary.org/oboInOwl/go#goslim_drosophila	rdfs:subPropertyOf	
-WARN	missing_subset_declaration	http://purl.oboInOwllibrary.org/oboInOwl/go#goslim_flybase_ribbon	rdfs:subPropertyOf	
-WARN	missing_subset_declaration	http://purl.oboInOwllibrary.org/oboInOwl/go#goslim_metagenomics	rdfs:subPropertyOf	
-WARN	missing_subset_declaration	http://purl.oboInOwllibrary.org/oboInOwl/go#goslim_pir	rdfs:subPropertyOf	
-WARN	missing_subset_declaration	http://purl.oboInOwllibrary.org/oboInOwl/go#goslim_plant	rdfs:subPropertyOf	
-WARN	missing_subset_declaration	http://purl.oboInOwllibrary.org/oboInOwl/go#goslim_pombe	rdfs:subPropertyOf	
-WARN	missing_subset_declaration	http://purl.oboInOwllibrary.org/oboInOwl/go#goslim_yeast	rdfs:subPropertyOf	
-WARN	missing_subset_declaration	http://purl.oboInOwllibrary.org/oboInOwl/hp#hposlim_core	rdfs:subPropertyOf	
-WARN	missing_subset_declaration	http://purl.oboInOwllibrary.org/oboInOwl/mi#PSI-MI_slim	rdfs:subPropertyOf	
-WARN	missing_subset_declaration	http://purl.oboInOwllibrary.org/oboInOwl/mondo#gard_rare	rdfs:subPropertyOf	
-WARN	missing_subset_declaration	http://purl.oboInOwllibrary.org/oboInOwl/mondo#harrisons_view	rdfs:subPropertyOf	
-WARN	missing_subset_declaration	http://purl.oboInOwllibrary.org/oboInOwl/mondo#ordo_disease	rdfs:subPropertyOf	
-WARN	missing_subset_declaration	http://purl.oboInOwllibrary.org/oboInOwl/mp-edit#IMPC	rdfs:subPropertyOf	
-WARN	missing_subset_declaration	http://purl.oboInOwllibrary.org/oboInOwl/mp-edit#Sanger_Terms	rdfs:subPropertyOf	
-WARN	missing_subset_declaration	http://purl.oboInOwllibrary.org/oboInOwl/pato#attribute_slim	rdfs:subPropertyOf	
-WARN	missing_subset_declaration	http://purl.oboInOwllibrary.org/oboInOwl/pato#scalar_slim	rdfs:subPropertyOf	
-WARN	missing_subset_declaration	http://purl.oboInOwllibrary.org/oboInOwl/uberon/core#cumbo	rdfs:subPropertyOf	
-WARN	missing_subset_declaration	http://purl.oboInOwllibrary.org/oboInOwl/uberon/core#efo_slim	rdfs:subPropertyOf	
-WARN	missing_subset_declaration	http://purl.oboInOwllibrary.org/oboInOwl/uberon/core#major_organ	rdfs:subPropertyOf	
-WARN	missing_subset_declaration	http://purl.oboInOwllibrary.org/oboInOwl/uberon/core#non_informative	rdfs:subPropertyOf	
-WARN	missing_subset_declaration	http://purl.oboInOwllibrary.org/oboInOwl/uberon/core#pheno_slim	rdfs:subPropertyOf	
-WARN	missing_subset_declaration	http://purl.oboInOwllibrary.org/oboInOwl/uberon/core#uberon_slim	rdfs:subPropertyOf	
-WARN	missing_subset_declaration	http://purl.oboInOwllibrary.org/oboInOwl/uberon/core#upper_level	rdfs:subPropertyOf	
-WARN	missing_subset_declaration	http://purl.oboInOwllibrary.org/oboInOwl/uberon/core#vertebrate_core	rdfs:subPropertyOf	
-WARN	missing_subset_declaration	http://purl.oboInOwllibrary.org/oboInOwl/ubprop#_upper_level	rdfs:subPropertyOf	
-WARN	missing_subset_declaration	blank node	rdfs:subPropertyOf	
-WARN	missing_subset_declaration	blank node	rdfs:subPropertyOf	
+WARN	duplicate_exact_synonym	NCIT:C16866	oboInOwl:hasExactSynonym	Model System
+WARN	duplicate_exact_synonym	NCIT:C80519	oboInOwl:hasExactSynonym	Model System
+WARN	duplicate_exact_synonym	NCIT:C16866	oboInOwl:hasExactSynonym	Model
+WARN	duplicate_exact_synonym	NCIT:C80519	oboInOwl:hasExactSynonym	Model
+WARN	duplicate_exact_synonym	NCIT:C17204	oboInOwl:hasExactSynonym	CT
+WARN	duplicate_exact_synonym	NCIT:C64345	oboInOwl:hasExactSynonym	CT
+WARN	duplicate_exact_synonym	GO:0007610	oboInOwl:hasExactSynonym	behaviour
+WARN	duplicate_exact_synonym	NBO:0000313	oboInOwl:hasExactSynonym	behaviour
+WARN	missing_definition	BFO:0000141	IAO:0000115	
+WARN	missing_definition	CMO:0000000	IAO:0000115	
+WARN	missing_definition	CMO:0000023	IAO:0000115	
+WARN	missing_definition	CMO:0000035	IAO:0000115	
+WARN	missing_definition	CMO:0000036	IAO:0000115	
+WARN	missing_definition	CMO:0000046	IAO:0000115	
+WARN	missing_definition	CMO:0000050	IAO:0000115	
+WARN	missing_definition	CMO:0000051	IAO:0000115	
+WARN	missing_definition	CMO:0000052	IAO:0000115	
+WARN	missing_definition	CMO:0000053	IAO:0000115	
+WARN	missing_definition	CMO:0000118	IAO:0000115	
+WARN	missing_definition	CMO:0000119	IAO:0000115	
+WARN	missing_definition	CMO:0000286	IAO:0000115	
+WARN	missing_definition	CMO:0000294	IAO:0000115	
+WARN	missing_definition	CMO:0000360	IAO:0000115	
+WARN	missing_definition	CMO:0000364	IAO:0000115	
+WARN	missing_definition	CMO:0000490	IAO:0000115	
+WARN	missing_definition	CMO:0000503	IAO:0000115	
+WARN	missing_definition	CMO:0000515	IAO:0000115	
+WARN	missing_definition	CMO:0001003	IAO:0000115	
+WARN	missing_definition	CMO:0001247	IAO:0000115	
+WARN	missing_definition	CMO:0001822	IAO:0000115	
+WARN	missing_definition	CMO:0001824	IAO:0000115	
+WARN	missing_definition	CMO:0002048	IAO:0000115	
+WARN	missing_definition	CMO:0002049	IAO:0000115	
+WARN	missing_definition	CMO:0002280	IAO:0000115	
+WARN	missing_definition	CMO:0002281	IAO:0000115	
+WARN	missing_definition	CMO:0002570	IAO:0000115	
+WARN	missing_definition	CMO:0002786	IAO:0000115	
+WARN	missing_definition	DOID:11949	IAO:0000115	
+WARN	missing_definition	DOID:4175	IAO:0000115	
+WARN	missing_definition	FMA:68614	IAO:0000115	
+WARN	missing_definition	IAO:0000114	IAO:0000115	
+WARN	missing_definition	IAO:0000425	IAO:0000115	
+WARN	missing_definition	IAO:0000600	IAO:0000115	
+WARN	missing_definition	IAO:0000601	IAO:0000115	
+WARN	missing_definition	IAO:0000602	IAO:0000115	
+WARN	missing_definition	MFOEM:000010	IAO:0000115	
+WARN	missing_definition	MFOEM:000165	IAO:0000115	
+WARN	missing_definition	MFOMD:0000021	IAO:0000115	
+WARN	missing_definition	MFOMD:0000037	IAO:0000115	
+WARN	missing_definition	MFOMD:0000069	IAO:0000115	
+WARN	missing_definition	NCIT:C17456	IAO:0000115	
+WARN	missing_definition	NCIT:C35269	IAO:0000115	
+WARN	missing_definition	NCIT:C39011	IAO:0000115	
+WARN	missing_definition	NCIT:C39194	IAO:0000115	
+WARN	missing_definition	NCIT:C63479	IAO:0000115	
+WARN	missing_definition	OAE:0004334	IAO:0000115	
+WARN	missing_definition	SYMP:0000387	IAO:0000115	
+WARN	missing_definition	SYMP:0000410	IAO:0000115	
+WARN	missing_definition	SYMP:0000459	IAO:0000115	
+WARN	missing_definition	SYMP:0000461	IAO:0000115	
+WARN	missing_definition	SYMP:0000473	IAO:0000115	
+WARN	missing_definition	SYMP:0000480	IAO:0000115	
+WARN	missing_definition	SYMP:0000567	IAO:0000115	
+WARN	missing_definition	SYMP:0019139	IAO:0000115	
+WARN	missing_definition	UBERON:0005913	IAO:0000115	
+WARN	missing_definition	UBERON:0034944	IAO:0000115	
+WARN	missing_definition	obo:UBPROP_0000007	IAO:0000115	
+WARN	missing_definition	obo:UBPROP_0000201	IAO:0000115	
+WARN	missing_definition	obo:UBPROP_0000202	IAO:0000115	
+WARN	missing_definition	dc11:contributor	IAO:0000115	
+WARN	missing_definition	dc11:description	IAO:0000115	
+WARN	missing_definition	dc11:source	IAO:0000115	
+WARN	missing_definition	dc:contributor	IAO:0000115	
+WARN	missing_definition	dc:license	IAO:0000115	
+WARN	missing_definition	dc:title	IAO:0000115	
+WARN	missing_definition	http://www.co-ode.org/ontologies/ont.owl#obsessive–compulsive	IAO:0000115	
+WARN	missing_definition	oboInOwl:hasBroadSynonym	IAO:0000115	
+WARN	missing_definition	oboInOwl:hasNarrowSynonym	IAO:0000115	
+WARN	missing_definition	oboInOwl:shorthand	IAO:0000115	
+WARN	missing_definition	foaf:depicted_by	IAO:0000115	
+WARN	missing_definition	https://bio.scai.fraunhofer.de/ontology/bipolar_disorder#serum_lipid_level	IAO:0000115	
+WARN	missing_definition	https://www.wikidata.org/wiki/Property:P1659	IAO:0000115	
+WARN	missing_definition	https://www.wikidata.org/wiki/Property:P486	IAO:0000115	
+WARN	duplicate_scoped_synonym	NCBITaxon:2759	oboInOwl:hasExactSynonym	eukaryotes
+WARN	duplicate_scoped_synonym	NCBITaxon:2759	oboInOwl:hasRelatedSynonym	eukaryotes
+WARN	duplicate_scoped_synonym	NCBITaxon:40674	oboInOwl:hasExactSynonym	mammals
+WARN	duplicate_scoped_synonym	NCBITaxon:40674	oboInOwl:hasRelatedSynonym	mammals
+WARN	duplicate_scoped_synonym	NCBITaxon:6231	oboInOwl:hasExactSynonym	nematodes
+WARN	duplicate_scoped_synonym	NCBITaxon:6231	oboInOwl:hasRelatedSynonym	nematodes
+WARN	duplicate_scoped_synonym	NCBITaxon:6656	oboInOwl:hasExactSynonym	arthropods
+WARN	duplicate_scoped_synonym	NCBITaxon:6656	oboInOwl:hasRelatedSynonym	arthropods
+WARN	duplicate_scoped_synonym	NCBITaxon:7742	oboInOwl:hasExactSynonym	vertebrates
+WARN	duplicate_scoped_synonym	NCBITaxon:7742	oboInOwl:hasRelatedSynonym	vertebrates
+WARN	duplicate_scoped_synonym	UBERON:0001018	oboInOwl:hasNarrowSynonym	nerve tract
+WARN	duplicate_scoped_synonym	UBERON:0001018	oboInOwl:hasRelatedSynonym	nerve tract
+WARN	duplicate_scoped_synonym	UBERON:0002769	oboInOwl:hasExactSynonym	gyrus temporalis superior
+WARN	duplicate_scoped_synonym	UBERON:0002769	oboInOwl:hasRelatedSynonym	gyrus temporalis superior
+WARN	duplicate_scoped_synonym	UBERON:0003883	oboInOwl:hasExactSynonym	CA3
+WARN	duplicate_scoped_synonym	UBERON:0003883	oboInOwl:hasExactSynonym	regio III cornus ammonis
+WARN	duplicate_scoped_synonym	UBERON:0003883	oboInOwl:hasRelatedSynonym	CA3
+WARN	duplicate_scoped_synonym	UBERON:0003883	oboInOwl:hasRelatedSynonym	regio III cornus ammonis
+WARN	duplicate_scoped_synonym	UBERON:0006101	oboInOwl:hasBroadSynonym	B09-24
+WARN	duplicate_scoped_synonym	UBERON:0006101	oboInOwl:hasExactSynonym	B09-24
+WARN	duplicate_scoped_synonym	UBERON:0006473	oboInOwl:hasBroadSynonym	B09-18
+WARN	duplicate_scoped_synonym	UBERON:0006473	oboInOwl:hasExactSynonym	B09-18
+WARN	duplicate_scoped_synonym	UBERON:0006481	oboInOwl:hasBroadSynonym	B09-44
+WARN	duplicate_scoped_synonym	UBERON:0006481	oboInOwl:hasExactSynonym	B09-44
+WARN	duplicate_scoped_synonym	UBERON:0006482	oboInOwl:hasBroadSynonym	B09-45
+WARN	duplicate_scoped_synonym	UBERON:0006482	oboInOwl:hasBroadSynonym	BA45
+WARN	duplicate_scoped_synonym	UBERON:0006482	oboInOwl:hasExactSynonym	B09-45
+WARN	duplicate_scoped_synonym	UBERON:0006482	oboInOwl:hasExactSynonym	BA45
+WARN	duplicate_scoped_synonym	UBERON:0006483	oboInOwl:hasBroadSynonym	B09-46
+WARN	duplicate_scoped_synonym	UBERON:0006483	oboInOwl:hasExactSynonym	B09-46
+WARN	duplicate_scoped_synonym	UBERON:0006483	oboInOwl:hasExactSynonym	middle frontal area 46
+WARN	duplicate_scoped_synonym	UBERON:0006483	oboInOwl:hasRelatedSynonym	middle frontal area 46
+WARN	duplicate_scoped_synonym	UBERON:0006484	oboInOwl:hasBroadSynonym	B09-47
+WARN	duplicate_scoped_synonym	UBERON:0006484	oboInOwl:hasExactSynonym	B09-47
+WARN	duplicate_scoped_synonym	UBERON:0013528	oboInOwl:hasBroadSynonym	B09-11
+WARN	duplicate_scoped_synonym	UBERON:0013528	oboInOwl:hasExactSynonym	B09-11
+WARN	duplicate_scoped_synonym	UBERON:0013528	oboInOwl:hasExactSynonym	area 11 of Brodmann
+WARN	duplicate_scoped_synonym	UBERON:0013528	oboInOwl:hasRelatedSynonym	area 11 of Brodmann
+WARN	duplicate_scoped_synonym	UBERON:0013539	oboInOwl:hasBroadSynonym	B09-8
+WARN	duplicate_scoped_synonym	UBERON:0013539	oboInOwl:hasExactSynonym	B09-8
+WARN	duplicate_scoped_synonym	UBERON:0013540	oboInOwl:hasBroadSynonym	B09-9
+WARN	duplicate_scoped_synonym	UBERON:0013540	oboInOwl:hasExactSynonym	B09-9
+WARN	duplicate_scoped_synonym	UBERON:0013541	oboInOwl:hasBroadSynonym	B09-10
+WARN	duplicate_scoped_synonym	UBERON:0013541	oboInOwl:hasExactSynonym	B09-10
+WARN	duplicate_scoped_synonym	UBERON:0013550	oboInOwl:hasBroadSynonym	B09-19
+WARN	duplicate_scoped_synonym	UBERON:0013550	oboInOwl:hasExactSynonym	B09-19
+WARN	duplicate_scoped_synonym	UBERON:0013551	oboInOwl:hasBroadSynonym	B09-20
+WARN	duplicate_scoped_synonym	UBERON:0013551	oboInOwl:hasExactSynonym	B09-20
+WARN	duplicate_scoped_synonym	UBERON:0013552	oboInOwl:hasBroadSynonym	B09-21
+WARN	duplicate_scoped_synonym	UBERON:0013552	oboInOwl:hasExactSynonym	B09-21
+WARN	duplicate_scoped_synonym	UBERON:0013553	oboInOwl:hasBroadSynonym	B09-22
+WARN	duplicate_scoped_synonym	UBERON:0013553	oboInOwl:hasExactSynonym	B09-22
+WARN	duplicate_scoped_synonym	UBERON:0013556	oboInOwl:hasBroadSynonym	B09-25
+WARN	duplicate_scoped_synonym	UBERON:0013556	oboInOwl:hasExactSynonym	B09-25
+WARN	duplicate_scoped_synonym	UBERON:0013560	oboInOwl:hasBroadSynonym	B09-32
+WARN	duplicate_scoped_synonym	UBERON:0013560	oboInOwl:hasExactSynonym	B09-32
 WARN	annotation_whitespace	BFO:0000002	IAO:0000602	(forall (x y) (if (and (Continuant x) (exists (t) (continuantPartOfAt y x t))) (Continuant y))) // axiom label in BFO2 CLIF: [009-002] 
 WARN	annotation_whitespace	BFO:0000002	IAO:0000602	(forall (x y) (if (and (Continuant x) (exists (t) (hasContinuantPartOfAt y x t))) (Continuant y))) // axiom label in BFO2 CLIF: [126-001] 
 WARN	annotation_whitespace	BFO:0000002	IAO:0000602	(forall (x) (if (Continuant x) (Entity x))) // axiom label in BFO2 CLIF: [008-002] 
@@ -1185,14 +727,153 @@ In the examples above, a reagent is an operational component of a device, but th
 WARN	annotation_whitespace	OMIABIS:0001008	rdfs:comment	"It is argued that Comorbidity occurs due to a disposition established by a prior infection with a pathogenic organism of a different kind.
 @en"
 WARN	annotation_whitespace	RO:0002161	IAO:0000425	?X DisjointWith RO_0002162 some ?Y 
-WARN	duplicate_exact_synonym	NCIT:C16866	oboInOwl:hasExactSynonym	Model System
-WARN	duplicate_exact_synonym	NCIT:C80519	oboInOwl:hasExactSynonym	Model System
-WARN	duplicate_exact_synonym	NCIT:C16866	oboInOwl:hasExactSynonym	Model
-WARN	duplicate_exact_synonym	NCIT:C80519	oboInOwl:hasExactSynonym	Model
-WARN	duplicate_exact_synonym	NCIT:C17204	oboInOwl:hasExactSynonym	CT
-WARN	duplicate_exact_synonym	NCIT:C64345	oboInOwl:hasExactSynonym	CT
-WARN	duplicate_exact_synonym	GO:0007610	oboInOwl:hasExactSynonym	behaviour
-WARN	duplicate_exact_synonym	NBO:0000313	oboInOwl:hasExactSynonym	behaviour
+WARN	missing_subset_declaration	http://purl.oboInOwllibrary.org/oboInOwl/NCIT_C100110	rdfs:subPropertyOf	
+WARN	missing_subset_declaration	http://purl.oboInOwllibrary.org/oboInOwl/NCIT_C100129	rdfs:subPropertyOf	
+WARN	missing_subset_declaration	http://purl.oboInOwllibrary.org/oboInOwl/NCIT_C101858	rdfs:subPropertyOf	
+WARN	missing_subset_declaration	http://purl.oboInOwllibrary.org/oboInOwl/NCIT_C106039	rdfs:subPropertyOf	
+WARN	missing_subset_declaration	http://purl.oboInOwllibrary.org/oboInOwl/NCIT_C115302	rdfs:subPropertyOf	
+WARN	missing_subset_declaration	http://purl.oboInOwllibrary.org/oboInOwl/NCIT_C115304	rdfs:subPropertyOf	
+WARN	missing_subset_declaration	http://purl.oboInOwllibrary.org/oboInOwl/NCIT_C116105	rdfs:subPropertyOf	
+WARN	missing_subset_declaration	http://purl.oboInOwllibrary.org/oboInOwl/NCIT_C116106	rdfs:subPropertyOf	
+WARN	missing_subset_declaration	http://purl.oboInOwllibrary.org/oboInOwl/NCIT_C116977	rdfs:subPropertyOf	
+WARN	missing_subset_declaration	http://purl.oboInOwllibrary.org/oboInOwl/NCIT_C118168	rdfs:subPropertyOf	
+WARN	missing_subset_declaration	http://purl.oboInOwllibrary.org/oboInOwl/NCIT_C118169	rdfs:subPropertyOf	
+WARN	missing_subset_declaration	http://purl.oboInOwllibrary.org/oboInOwl/NCIT_C118464	rdfs:subPropertyOf	
+WARN	missing_subset_declaration	http://purl.oboInOwllibrary.org/oboInOwl/NCIT_C118466	rdfs:subPropertyOf	
+WARN	missing_subset_declaration	http://purl.oboInOwllibrary.org/oboInOwl/NCIT_C118468	rdfs:subPropertyOf	
+WARN	missing_subset_declaration	http://purl.oboInOwllibrary.org/oboInOwl/NCIT_C118970	rdfs:subPropertyOf	
+WARN	missing_subset_declaration	http://purl.oboInOwllibrary.org/oboInOwl/NCIT_C118971	rdfs:subPropertyOf	
+WARN	missing_subset_declaration	http://purl.oboInOwllibrary.org/oboInOwl/NCIT_C120166	rdfs:subPropertyOf	
+WARN	missing_subset_declaration	http://purl.oboInOwllibrary.org/oboInOwl/NCIT_C120532	rdfs:subPropertyOf	
+WARN	missing_subset_declaration	http://purl.oboInOwllibrary.org/oboInOwl/NCIT_C120533	rdfs:subPropertyOf	
+WARN	missing_subset_declaration	http://purl.oboInOwllibrary.org/oboInOwl/NCIT_C121270	rdfs:subPropertyOf	
+WARN	missing_subset_declaration	http://purl.oboInOwllibrary.org/oboInOwl/NCIT_C121522	rdfs:subPropertyOf	
+WARN	missing_subset_declaration	http://purl.oboInOwllibrary.org/oboInOwl/NCIT_C124307	rdfs:subPropertyOf	
+WARN	missing_subset_declaration	http://purl.oboInOwllibrary.org/oboInOwl/NCIT_C125481	rdfs:subPropertyOf	
+WARN	missing_subset_declaration	http://purl.oboInOwllibrary.org/oboInOwl/NCIT_C128701	rdfs:subPropertyOf	
+WARN	missing_subset_declaration	http://purl.oboInOwllibrary.org/oboInOwl/NCIT_C128706	rdfs:subPropertyOf	
+WARN	missing_subset_declaration	http://purl.oboInOwllibrary.org/oboInOwl/NCIT_C132298	rdfs:subPropertyOf	
+WARN	missing_subset_declaration	http://purl.oboInOwllibrary.org/oboInOwl/NCIT_C142799	rdfs:subPropertyOf	
+WARN	missing_subset_declaration	http://purl.oboInOwllibrary.org/oboInOwl/NCIT_C147067	rdfs:subPropertyOf	
+WARN	missing_subset_declaration	http://purl.oboInOwllibrary.org/oboInOwl/NCIT_C155946	rdfs:subPropertyOf	
+WARN	missing_subset_declaration	http://purl.oboInOwllibrary.org/oboInOwl/NCIT_C156952	rdfs:subPropertyOf	
+WARN	missing_subset_declaration	http://purl.oboInOwllibrary.org/oboInOwl/NCIT_C156953	rdfs:subPropertyOf	
+WARN	missing_subset_declaration	http://purl.oboInOwllibrary.org/oboInOwl/NCIT_C156954	rdfs:subPropertyOf	
+WARN	missing_subset_declaration	http://purl.oboInOwllibrary.org/oboInOwl/NCIT_C157711	rdfs:subPropertyOf	
+WARN	missing_subset_declaration	http://purl.oboInOwllibrary.org/oboInOwl/NCIT_C158034	rdfs:subPropertyOf	
+WARN	missing_subset_declaration	http://purl.oboInOwllibrary.org/oboInOwl/NCIT_C158035	rdfs:subPropertyOf	
+WARN	missing_subset_declaration	http://purl.oboInOwllibrary.org/oboInOwl/NCIT_C158037	rdfs:subPropertyOf	
+WARN	missing_subset_declaration	http://purl.oboInOwllibrary.org/oboInOwl/NCIT_C158520	rdfs:subPropertyOf	
+WARN	missing_subset_declaration	http://purl.oboInOwllibrary.org/oboInOwl/NCIT_C159007	rdfs:subPropertyOf	
+WARN	missing_subset_declaration	http://purl.oboInOwllibrary.org/oboInOwl/NCIT_C159028	rdfs:subPropertyOf	
+WARN	missing_subset_declaration	http://purl.oboInOwllibrary.org/oboInOwl/NCIT_C159074	rdfs:subPropertyOf	
+WARN	missing_subset_declaration	http://purl.oboInOwllibrary.org/oboInOwl/NCIT_C159079	rdfs:subPropertyOf	
+WARN	missing_subset_declaration	http://purl.oboInOwllibrary.org/oboInOwl/NCIT_C159125	rdfs:subPropertyOf	
+WARN	missing_subset_declaration	http://purl.oboInOwllibrary.org/oboInOwl/NCIT_C159339	rdfs:subPropertyOf	
+WARN	missing_subset_declaration	http://purl.oboInOwllibrary.org/oboInOwl/NCIT_C159414	rdfs:subPropertyOf	
+WARN	missing_subset_declaration	http://purl.oboInOwllibrary.org/oboInOwl/NCIT_C159418	rdfs:subPropertyOf	
+WARN	missing_subset_declaration	http://purl.oboInOwllibrary.org/oboInOwl/NCIT_C159501	rdfs:subPropertyOf	
+WARN	missing_subset_declaration	http://purl.oboInOwllibrary.org/oboInOwl/NCIT_C159502	rdfs:subPropertyOf	
+WARN	missing_subset_declaration	http://purl.oboInOwllibrary.org/oboInOwl/NCIT_C162989	rdfs:subPropertyOf	
+WARN	missing_subset_declaration	http://purl.oboInOwllibrary.org/oboInOwl/NCIT_C165451	rdfs:subPropertyOf	
+WARN	missing_subset_declaration	http://purl.oboInOwllibrary.org/oboInOwl/NCIT_C166373	rdfs:subPropertyOf	
+WARN	missing_subset_declaration	http://purl.oboInOwllibrary.org/oboInOwl/NCIT_C167409	rdfs:subPropertyOf	
+WARN	missing_subset_declaration	http://purl.oboInOwllibrary.org/oboInOwl/NCIT_C171094	rdfs:subPropertyOf	
+WARN	missing_subset_declaration	http://purl.oboInOwllibrary.org/oboInOwl/NCIT_C171122	rdfs:subPropertyOf	
+WARN	missing_subset_declaration	http://purl.oboInOwllibrary.org/oboInOwl/NCIT_C173209	rdfs:subPropertyOf	
+WARN	missing_subset_declaration	http://purl.oboInOwllibrary.org/oboInOwl/NCIT_C173232	rdfs:subPropertyOf	
+WARN	missing_subset_declaration	http://purl.oboInOwllibrary.org/oboInOwl/NCIT_C173233	rdfs:subPropertyOf	
+WARN	missing_subset_declaration	http://purl.oboInOwllibrary.org/oboInOwl/NCIT_C174019	rdfs:subPropertyOf	
+WARN	missing_subset_declaration	http://purl.oboInOwllibrary.org/oboInOwl/NCIT_C174237	rdfs:subPropertyOf	
+WARN	missing_subset_declaration	http://purl.oboInOwllibrary.org/oboInOwl/NCIT_C174250	rdfs:subPropertyOf	
+WARN	missing_subset_declaration	http://purl.oboInOwllibrary.org/oboInOwl/NCIT_C174252	rdfs:subPropertyOf	
+WARN	missing_subset_declaration	http://purl.oboInOwllibrary.org/oboInOwl/NCIT_C174261	rdfs:subPropertyOf	
+WARN	missing_subset_declaration	http://purl.oboInOwllibrary.org/oboInOwl/NCIT_C174262	rdfs:subPropertyOf	
+WARN	missing_subset_declaration	http://purl.oboInOwllibrary.org/oboInOwl/NCIT_C176424	rdfs:subPropertyOf	
+WARN	missing_subset_declaration	http://purl.oboInOwllibrary.org/oboInOwl/NCIT_C177383	rdfs:subPropertyOf	
+WARN	missing_subset_declaration	http://purl.oboInOwllibrary.org/oboInOwl/NCIT_C177393	rdfs:subPropertyOf	
+WARN	missing_subset_declaration	http://purl.oboInOwllibrary.org/oboInOwl/NCIT_C177394	rdfs:subPropertyOf	
+WARN	missing_subset_declaration	http://purl.oboInOwllibrary.org/oboInOwl/NCIT_C177397	rdfs:subPropertyOf	
+WARN	missing_subset_declaration	http://purl.oboInOwllibrary.org/oboInOwl/NCIT_C177401	rdfs:subPropertyOf	
+WARN	missing_subset_declaration	http://purl.oboInOwllibrary.org/oboInOwl/NCIT_C177407	rdfs:subPropertyOf	
+WARN	missing_subset_declaration	http://purl.oboInOwllibrary.org/oboInOwl/NCIT_C177536	rdfs:subPropertyOf	
+WARN	missing_subset_declaration	http://purl.oboInOwllibrary.org/oboInOwl/NCIT_C177537	rdfs:subPropertyOf	
+WARN	missing_subset_declaration	http://purl.oboInOwllibrary.org/oboInOwl/NCIT_C178115	rdfs:subPropertyOf	
+WARN	missing_subset_declaration	http://purl.oboInOwllibrary.org/oboInOwl/NCIT_C178124	rdfs:subPropertyOf	
+WARN	missing_subset_declaration	http://purl.oboInOwllibrary.org/oboInOwl/NCIT_C178125	rdfs:subPropertyOf	
+WARN	missing_subset_declaration	http://purl.oboInOwllibrary.org/oboInOwl/NCIT_C178127	rdfs:subPropertyOf	
+WARN	missing_subset_declaration	http://purl.oboInOwllibrary.org/oboInOwl/NCIT_C178718	rdfs:subPropertyOf	
+WARN	missing_subset_declaration	http://purl.oboInOwllibrary.org/oboInOwl/NCIT_C179026	rdfs:subPropertyOf	
+WARN	missing_subset_declaration	http://purl.oboInOwllibrary.org/oboInOwl/NCIT_C19752	rdfs:subPropertyOf	
+WARN	missing_subset_declaration	http://purl.oboInOwllibrary.org/oboInOwl/NCIT_C54447	rdfs:subPropertyOf	
+WARN	missing_subset_declaration	http://purl.oboInOwllibrary.org/oboInOwl/NCIT_C54450	rdfs:subPropertyOf	
+WARN	missing_subset_declaration	http://purl.oboInOwllibrary.org/oboInOwl/NCIT_C54583	rdfs:subPropertyOf	
+WARN	missing_subset_declaration	http://purl.oboInOwllibrary.org/oboInOwl/NCIT_C61410	rdfs:subPropertyOf	
+WARN	missing_subset_declaration	http://purl.oboInOwllibrary.org/oboInOwl/NCIT_C62596	rdfs:subPropertyOf	
+WARN	missing_subset_declaration	http://purl.oboInOwllibrary.org/oboInOwl/NCIT_C65047	rdfs:subPropertyOf	
+WARN	missing_subset_declaration	http://purl.oboInOwllibrary.org/oboInOwl/NCIT_C66741	rdfs:subPropertyOf	
+WARN	missing_subset_declaration	http://purl.oboInOwllibrary.org/oboInOwl/NCIT_C66830	rdfs:subPropertyOf	
+WARN	missing_subset_declaration	http://purl.oboInOwllibrary.org/oboInOwl/NCIT_C67153	rdfs:subPropertyOf	
+WARN	missing_subset_declaration	http://purl.oboInOwllibrary.org/oboInOwl/NCIT_C67154	rdfs:subPropertyOf	
+WARN	missing_subset_declaration	http://purl.oboInOwllibrary.org/oboInOwl/NCIT_C67497	rdfs:subPropertyOf	
+WARN	missing_subset_declaration	http://purl.oboInOwllibrary.org/oboInOwl/NCIT_C77526	rdfs:subPropertyOf	
+WARN	missing_subset_declaration	http://purl.oboInOwllibrary.org/oboInOwl/NCIT_C82590	rdfs:subPropertyOf	
+WARN	missing_subset_declaration	http://purl.oboInOwllibrary.org/oboInOwl/NCIT_C83188	rdfs:subPropertyOf	
+WARN	missing_subset_declaration	http://purl.oboInOwllibrary.org/oboInOwl/NCIT_C85492	rdfs:subPropertyOf	
+WARN	missing_subset_declaration	http://purl.oboInOwllibrary.org/oboInOwl/NCIT_C89415	rdfs:subPropertyOf	
+WARN	missing_subset_declaration	http://purl.oboInOwllibrary.org/oboInOwl/NCIT_C89506	rdfs:subPropertyOf	
+WARN	missing_subset_declaration	http://purl.oboInOwllibrary.org/oboInOwl/NCIT_C89961	rdfs:subPropertyOf	
+WARN	missing_subset_declaration	http://purl.oboInOwllibrary.org/oboInOwl/NCIT_C89962	rdfs:subPropertyOf	
+WARN	missing_subset_declaration	http://purl.oboInOwllibrary.org/oboInOwl/NCIT_C90007	rdfs:subPropertyOf	
+WARN	missing_subset_declaration	http://purl.oboInOwllibrary.org/oboInOwl/NCIT_C90009	rdfs:subPropertyOf	
+WARN	missing_subset_declaration	http://purl.oboInOwllibrary.org/oboInOwl/NCIT_C90259	rdfs:subPropertyOf	
+WARN	missing_subset_declaration	http://purl.oboInOwllibrary.org/oboInOwl/NCIT_C91101	rdfs:subPropertyOf	
+WARN	missing_subset_declaration	http://purl.oboInOwllibrary.org/oboInOwl/NCIT_C97150	rdfs:subPropertyOf	
+WARN	missing_subset_declaration	http://purl.oboInOwllibrary.org/oboInOwl/NCIT_C99147	rdfs:subPropertyOf	
+WARN	missing_subset_declaration	http://purl.oboInOwllibrary.org/oboInOwl/chebi#3_STAR	rdfs:subPropertyOf	
+WARN	missing_subset_declaration	http://purl.oboInOwllibrary.org/oboInOwl/doid#DO_AGR_slim	rdfs:subPropertyOf	
+WARN	missing_subset_declaration	http://purl.oboInOwllibrary.org/oboInOwl/doid#DO_CFDE_slim	rdfs:subPropertyOf	
+WARN	missing_subset_declaration	http://purl.oboInOwllibrary.org/oboInOwl/doid#DO_FlyBase_slim	rdfs:subPropertyOf	
+WARN	missing_subset_declaration	http://purl.oboInOwllibrary.org/oboInOwl/doid#DO_GXD_slim	rdfs:subPropertyOf	
+WARN	missing_subset_declaration	http://purl.oboInOwllibrary.org/oboInOwl/doid#DO_MGI_slim	rdfs:subPropertyOf	
+WARN	missing_subset_declaration	http://purl.oboInOwllibrary.org/oboInOwl/doid#DO_RAD_slim	rdfs:subPropertyOf	
+WARN	missing_subset_declaration	http://purl.oboInOwllibrary.org/oboInOwl/doid#DO_cancer_slim	rdfs:subPropertyOf	
+WARN	missing_subset_declaration	http://purl.oboInOwllibrary.org/oboInOwl/doid#DO_rare_slim	rdfs:subPropertyOf	
+WARN	missing_subset_declaration	http://purl.oboInOwllibrary.org/oboInOwl/doid#NCIthesaurus	rdfs:subPropertyOf	
+WARN	missing_subset_declaration	http://purl.oboInOwllibrary.org/oboInOwl/doid#sexually_transmitted_infectious_disease	rdfs:subPropertyOf	
+WARN	missing_subset_declaration	http://purl.oboInOwllibrary.org/oboInOwl/doid#zoonotic_infectious_disease	rdfs:subPropertyOf	
+WARN	missing_subset_declaration	http://purl.oboInOwllibrary.org/oboInOwl/go#gocheck_do_not_manually_annotate	rdfs:subPropertyOf	
+WARN	missing_subset_declaration	http://purl.oboInOwllibrary.org/oboInOwl/go#goslim_agr	rdfs:subPropertyOf	
+WARN	missing_subset_declaration	http://purl.oboInOwllibrary.org/oboInOwl/go#goslim_aspergillus	rdfs:subPropertyOf	
+WARN	missing_subset_declaration	http://purl.oboInOwllibrary.org/oboInOwl/go#goslim_candida	rdfs:subPropertyOf	
+WARN	missing_subset_declaration	http://purl.oboInOwllibrary.org/oboInOwl/go#goslim_chembl	rdfs:subPropertyOf	
+WARN	missing_subset_declaration	http://purl.oboInOwllibrary.org/oboInOwl/go#goslim_drosophila	rdfs:subPropertyOf	
+WARN	missing_subset_declaration	http://purl.oboInOwllibrary.org/oboInOwl/go#goslim_flybase_ribbon	rdfs:subPropertyOf	
+WARN	missing_subset_declaration	http://purl.oboInOwllibrary.org/oboInOwl/go#goslim_metagenomics	rdfs:subPropertyOf	
+WARN	missing_subset_declaration	http://purl.oboInOwllibrary.org/oboInOwl/go#goslim_pir	rdfs:subPropertyOf	
+WARN	missing_subset_declaration	http://purl.oboInOwllibrary.org/oboInOwl/go#goslim_plant	rdfs:subPropertyOf	
+WARN	missing_subset_declaration	http://purl.oboInOwllibrary.org/oboInOwl/go#goslim_pombe	rdfs:subPropertyOf	
+WARN	missing_subset_declaration	http://purl.oboInOwllibrary.org/oboInOwl/go#goslim_yeast	rdfs:subPropertyOf	
+WARN	missing_subset_declaration	http://purl.oboInOwllibrary.org/oboInOwl/hp#hposlim_core	rdfs:subPropertyOf	
+WARN	missing_subset_declaration	http://purl.oboInOwllibrary.org/oboInOwl/mi#PSI-MI_slim	rdfs:subPropertyOf	
+WARN	missing_subset_declaration	http://purl.oboInOwllibrary.org/oboInOwl/mondo#gard_rare	rdfs:subPropertyOf	
+WARN	missing_subset_declaration	http://purl.oboInOwllibrary.org/oboInOwl/mondo#harrisons_view	rdfs:subPropertyOf	
+WARN	missing_subset_declaration	http://purl.oboInOwllibrary.org/oboInOwl/mondo#ordo_disease	rdfs:subPropertyOf	
+WARN	missing_subset_declaration	http://purl.oboInOwllibrary.org/oboInOwl/mp-edit#IMPC	rdfs:subPropertyOf	
+WARN	missing_subset_declaration	http://purl.oboInOwllibrary.org/oboInOwl/mp-edit#Sanger_Terms	rdfs:subPropertyOf	
+WARN	missing_subset_declaration	http://purl.oboInOwllibrary.org/oboInOwl/pato#attribute_slim	rdfs:subPropertyOf	
+WARN	missing_subset_declaration	http://purl.oboInOwllibrary.org/oboInOwl/pato#scalar_slim	rdfs:subPropertyOf	
+WARN	missing_subset_declaration	http://purl.oboInOwllibrary.org/oboInOwl/uberon/core#cumbo	rdfs:subPropertyOf	
+WARN	missing_subset_declaration	http://purl.oboInOwllibrary.org/oboInOwl/uberon/core#efo_slim	rdfs:subPropertyOf	
+WARN	missing_subset_declaration	http://purl.oboInOwllibrary.org/oboInOwl/uberon/core#major_organ	rdfs:subPropertyOf	
+WARN	missing_subset_declaration	http://purl.oboInOwllibrary.org/oboInOwl/uberon/core#non_informative	rdfs:subPropertyOf	
+WARN	missing_subset_declaration	http://purl.oboInOwllibrary.org/oboInOwl/uberon/core#pheno_slim	rdfs:subPropertyOf	
+WARN	missing_subset_declaration	http://purl.oboInOwllibrary.org/oboInOwl/uberon/core#uberon_slim	rdfs:subPropertyOf	
+WARN	missing_subset_declaration	http://purl.oboInOwllibrary.org/oboInOwl/uberon/core#upper_level	rdfs:subPropertyOf	
+WARN	missing_subset_declaration	http://purl.oboInOwllibrary.org/oboInOwl/uberon/core#vertebrate_core	rdfs:subPropertyOf	
+WARN	missing_subset_declaration	http://purl.oboInOwllibrary.org/oboInOwl/ubprop#_upper_level	rdfs:subPropertyOf	
+WARN	missing_subset_declaration	blank node	rdfs:subPropertyOf	
+WARN	missing_subset_declaration	blank node	rdfs:subPropertyOf	
 INFO	lowercase_definition	BFO:0000004	IAO:0000115	b is an independent continuant = Def. b is a continuant which is such that there is no c and no t such that b s-depends_on c at t. (axiom label in BFO2 Reference: [017-002])@en
 INFO	lowercase_definition	BFO:0000015	IAO:0000115	p is a process = Def. p is an occurrent that has temporal proper parts and for some time t, p s-depends_on some material entity at t. (axiom label in BFO2 Reference: [083-003])@en
 INFO	lowercase_definition	BFO:0000016	IAO:0000600	b is a disposition means: b is a realizable entity & b’s bearer is some material entity & b is such that if it ceases to exist, then its bearer is physically changed, & b’s realization occurs when and because this bearer is in some special physical circumstances, & this realization occurs in virtue of the bearer’s physical make-up. (axiom label in BFO2 Reference: [062-002])@en
@@ -1274,4 +955,5 @@ INFO	lowercase_definition	OAE:0001551	IAO:0000115	an adverse event that occurs i
 INFO	lowercase_definition	OAE:0002392	IAO:0000115	a brain injury AE,  injury to the brain caused by an external force, that results in a brain AE
 INFO	lowercase_definition	OBI:0000343	IAO:0000115	a interpreting data that is used to ascribe properties or relations to types based on an observation instance (i.e., on a number of observations or experiences); or to formulate laws based on limited observations of recurring phenomenal patterns.@en
 INFO	lowercase_definition	RO:0002161	IAO:0000115	"x never in taxon T if and only if T is a class, and x does not instantiate the class expression \""in taxon some T\"". Note that this is a shortcut relation, and should be used as a hasValue restriction in OWL."
+INFO	lowercase_definition	https://bio.scai.fraunhofer.de/ontology/schizophrenia#glutamate_hypothesis_model	IAO:0000115	the biophysical models using integrate-and-fire neural networks that simulate memory or working-memory storage and retrieval through attractor networks.
 INFO	missing_superclass	BFO:0000001	rdfs:subClassOf	
