@@ -14703,7 +14703,7 @@ https://bioportal.bioontology.org/ontologies/ONTOAD?p=classes&amp;conceptid=http
     <!-- http://purl.obolibrary.org/obo/NCIT_C19272 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/NCIT_C19272">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/NCIT_C71164"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0302859"/>
         <obo:IAO_0000115>A disease in a transgenic animal with pathologic mechanisms sufficiently similar to those of a human disease for the animal disease to serve as a model.</obo:IAO_0000115>
         <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/ncit.owl"/>
         <obo:NCIT_NHC0>C19272</obo:NCIT_NHC0>
@@ -16837,6 +16837,23 @@ Refer: https://www.ebi.ac.uk/ols/ontologies/ero/terms?iri=http%3A%2F%2Fpurl.obol
         <oboInOwl1:hasDbXRef>https://www.ncbi.nlm.nih.gov/pubmed/27427557</oboInOwl1:hasDbXRef>
         <oboInOwl1:hasExactSynonym>EEG</oboInOwl1:hasExactSynonym>
         <rdfs:label>electroencephalography</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OBI_0302859 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0302859">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0000047"/>
+        <obo:IAO_0000111>genetically modified organism</obo:IAO_0000111>
+        <obo:IAO_0000112 xml:lang="en">A protocol for removal of antibiotic resistance cassettes from human embryonic stem cells genetically modified by homologous recombination or transgenesis.
+Nat Protoc. 2008;3(10):1550-8. PMID: 18802436</obo:IAO_0000112>
+        <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000120"/>
+        <obo:IAO_0000115 xml:lang="en">an organism that is the output of a genetic transformation process</obo:IAO_0000115>
+        <obo:IAO_0000117>PERSON: Philippe Rocca-Serra</obo:IAO_0000117>
+        <obo:IAO_0000119 xml:lang="en">OBI Biomaterial</obo:IAO_0000119>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/obi.owl"/>
+        <rdfs:label xml:lang="en">genetically modified organism</rdfs:label>
     </owl:Class>
     
 
