@@ -13833,35 +13833,6 @@ https://www.ebi.ac.uk/ols/ontologies/ero/terms?iri=http%3A%2F%2Fpurl.obolibrary.
     
 
 
-    <!-- http://purl.obolibrary.org/obo/NCIT_C16866 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/NCIT_C16866">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000030"/>
-        <obo:IAO_0000115>A representation of something, often idealized or modified to make it conceptually easier to understand.</obo:IAO_0000115>
-        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/ncit.owl"/>
-        <obo:NCIT_NHC0>C16866</obo:NCIT_NHC0>
-        <obo:NCIT_P106>Intellectual Product</obo:NCIT_P106>
-        <obo:NCIT_P108>Model</obo:NCIT_P108>
-        <obo:NCIT_P207>C3161035</obo:NCIT_P207>
-        <obo:NCIT_P322>CDISC-GLOSS</obo:NCIT_P322>
-        <obo:NCIT_P325>A formal structure for representing and analyzing a process such as a clinical trial or the information pertaining to a restricted context (e.g., clinical trial data). [CDISC]</obo:NCIT_P325>
-        <obo:NCIT_P366>Model_System</obo:NCIT_P366>
-        <scho:CommentOnHierarchy>No reference ontology for OBO-BFO classification.
-AFO, a non-OBO ontology has classified &apos;model&apos; under &apos;information content entity&apos; as per BFO.
-Refer: https://www.ebi.ac.uk/ols/ontologies/afo/terms?iri=http%3A%2F%2Fpurl.allotrope.org%2Fontologies%2Fresult%23AFR_0000993
-Hence, classified &apos;model&apos; under &apos;information content entity&apos;.</scho:CommentOnHierarchy>
-        <oboInOwl:hasExactSynonym>Model</oboInOwl:hasExactSynonym>
-        <oboInOwl:hasExactSynonym>Model System</oboInOwl:hasExactSynonym>
-        <oboInOwl:hasExactSynonym>Modeling System</oboInOwl:hasExactSynonym>
-        <oboInOwl:hasExactSynonym>Models</oboInOwl:hasExactSynonym>
-        <oboInOwl:hasExactSynonym>model</oboInOwl:hasExactSynonym>
-        <oboInOwl:inSubset rdf:resource="http://purl.oboInOwllibrary.org/oboInOwl/NCIT_C61410"/>
-        <oboInOwl:inSubset rdf:resource="http://purl.oboInOwllibrary.org/oboInOwl/NCIT_C67497"/>
-        <rdfs:label>Model</rdfs:label>
-    </owl:Class>
-    
-
-
     <!-- http://purl.obolibrary.org/obo/NCIT_C17007 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/NCIT_C17007">
@@ -16081,7 +16052,7 @@ https://www.ebi.ac.uk/ols/ontologies/gsso/terms?iri=http%3A%2F%2Fpurl.obolibrary
     <!-- http://purl.obolibrary.org/obo/NCIT_C80519 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/NCIT_C80519">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/NCIT_C16866"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0000011"/>
         <obo:IAO_0000115>Systems designed to elucidate facts about complex biological phenomena, usually in a less complex or theoretical test environment.</obo:IAO_0000115>
         <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/ncit.owl"/>
         <obo:NCIT_NHC0>C80519</obo:NCIT_NHC0>

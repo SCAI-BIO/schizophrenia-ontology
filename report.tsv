@@ -3,6 +3,7 @@ ERROR	duplicate_label	IAO:0000119	rdfs:label	definition source
 ERROR	duplicate_label	SCDO:0000340	rdfs:label	definition source
 ERROR	duplicate_label	dc11:contributor	rdfs:label	contributor
 ERROR	duplicate_label	dc:contributor	rdfs:label	contributor
+ERROR	missing_label	http://www.co-ode.org/ontologies/ont.owl#obsessive–compulsive	rdfs:label	
 ERROR	multiple_labels	IAO:0000111	rdfs:label	editor preferred label
 ERROR	multiple_labels	IAO:0000111	rdfs:label	editor preferred label@en
 ERROR	multiple_labels	IAO:0000111	rdfs:label	editor preferred term
@@ -58,7 +59,6 @@ ERROR	multiple_labels	oboInOwl:hasRelatedSynonym	rdfs:label	has related synonym@
 ERROR	multiple_labels	oboInOwl:hasRelatedSynonym	rdfs:label	has_related_synonym
 ERROR	multiple_labels	oboInOwl:inSubset	rdfs:label	in subset
 ERROR	multiple_labels	oboInOwl:inSubset	rdfs:label	in_subset
-ERROR	illegal_use_of_built_in_vocabulary	rdf:type	rdf:type	owl:AnnotationProperty
 ERROR	multiple_definitions	DOID:9965	IAO:0000115	A coccidiosis that has material basis in protozoan Toxoplasma gondii. The parasite effects most genera of warm-blooded animals, including humans, but the primary host is the felid (cat) family. Animals are infected by eating infected meat, by ingestion of feces of a cat that has itself recently been infected, or transmission by mother to fetus. The symptoms include bilateral, nontender cervical or axillary lymphadenopathy, fever, malaise, myalgia, hepatosplenomegaly, anemia and leukopenia.
 ERROR	multiple_definitions	DOID:9965	IAO:0000115	A coccidiosis that has_material_basis_in protozoan Toxoplasma gondii. The parasite effects most genera of warm-blooded animals, including humans, but the primary host is the felid (cat) family. Animals are infected by eating infected meat, by ingestion of feces of a cat that has itself recently been infected, or transmission_by mother to fetus. The symptoms include bilateral, nontender cervical or axillary lymphadenopathy, fever, malaise, myalgia, hepatosplenomegaly, anemia and leukopenia.
 ERROR	multiple_definitions	IAO:0000112	IAO:0000115	A phrase describing how a class name should be used. May also include other kinds of examples that facilitate immediate understanding of a class semantics, such as widely known prototypical subclasses or instances of the class. Although essential for high level terms, examples for low level terms (e.g., Affymetrix HU133 array) are not@en
@@ -102,7 +102,7 @@ ERROR	multiple_definitions	oboInOwl:id	IAO:0000115	An identifier for an individu
 ERROR	multiple_definitions	oboInOwl:id	IAO:0000115	An identifier is an information content entity that is the outcome of a dubbing process and is used to refer to one instance of entity shared by a group of people to refer to that individual entity.
 ERROR	multiple_definitions	oboInOwl:inSubset	IAO:0000115	An association that connects the concept defining a particular terminology subset with concepts that belong to this subset.
 ERROR	multiple_definitions	oboInOwl:inSubset	IAO:0000115	In subset.
-ERROR	missing_label	http://www.co-ode.org/ontologies/ont.owl#obsessive–compulsive	rdfs:label	
+ERROR	illegal_use_of_built_in_vocabulary	rdf:type	rdf:type	owl:AnnotationProperty
 WARN	duplicate_label_synonym	GO:0007610	oboInOwl:hasExactSynonym	behavior
 WARN	duplicate_label_synonym	HP:0000152	oboInOwl:hasExactSynonym	Abnormality of head or neck
 WARN	duplicate_label_synonym	HP:0000478	oboInOwl:hasExactSynonym	Abnormality of the eye
@@ -187,7 +187,6 @@ WARN	duplicate_label_synonym	NCIT:C16810	oboInOwl:hasExactSynonym	Magnetic Reson
 WARN	duplicate_label_synonym	NCIT:C16811	oboInOwl:hasExactSynonym	Magnetoencephalography
 WARN	duplicate_label_synonym	NCIT:C168186	oboInOwl:hasExactSynonym	Electrocardiogram
 WARN	duplicate_label_synonym	NCIT:C16847	oboInOwl:hasExactSynonym	Technique
-WARN	duplicate_label_synonym	NCIT:C16866	oboInOwl:hasExactSynonym	Model
 WARN	duplicate_label_synonym	NCIT:C17007	oboInOwl:hasExactSynonym	Positron Emission Tomography
 WARN	duplicate_label_synonym	NCIT:C17103	oboInOwl:hasExactSynonym	Risk Factor
 WARN	duplicate_label_synonym	NCIT:C17203	oboInOwl:hasExactSynonym	Single Photon Emission Computed Tomography
@@ -322,145 +321,10 @@ WARN	duplicate_label_synonym	UBERON:0013560	oboInOwl:hasExactSynonym	Brodmann (1
 WARN	duplicate_label_synonym	UBERON:0022438	oboInOwl:hasExactSynonym	rostral anterior cingulate cortex
 WARN	duplicate_label_synonym	UBERON:0022716	oboInOwl:hasExactSynonym	lateral orbital frontal cortex
 WARN	duplicate_label_synonym	oboInOwl:hasDbXref	oboInOwl:hasExactSynonym	database_cross_reference
-WARN	duplicate_exact_synonym	NCIT:C16866	oboInOwl:hasExactSynonym	Model System
-WARN	duplicate_exact_synonym	NCIT:C80519	oboInOwl:hasExactSynonym	Model System
-WARN	duplicate_exact_synonym	NCIT:C16866	oboInOwl:hasExactSynonym	Model
-WARN	duplicate_exact_synonym	NCIT:C80519	oboInOwl:hasExactSynonym	Model
 WARN	duplicate_exact_synonym	NCIT:C17204	oboInOwl:hasExactSynonym	CT
 WARN	duplicate_exact_synonym	NCIT:C64345	oboInOwl:hasExactSynonym	CT
 WARN	duplicate_exact_synonym	GO:0007610	oboInOwl:hasExactSynonym	behaviour
 WARN	duplicate_exact_synonym	NBO:0000313	oboInOwl:hasExactSynonym	behaviour
-WARN	missing_definition	BFO:0000141	IAO:0000115	
-WARN	missing_definition	CMO:0000000	IAO:0000115	
-WARN	missing_definition	CMO:0000023	IAO:0000115	
-WARN	missing_definition	CMO:0000035	IAO:0000115	
-WARN	missing_definition	CMO:0000036	IAO:0000115	
-WARN	missing_definition	CMO:0000046	IAO:0000115	
-WARN	missing_definition	CMO:0000050	IAO:0000115	
-WARN	missing_definition	CMO:0000051	IAO:0000115	
-WARN	missing_definition	CMO:0000052	IAO:0000115	
-WARN	missing_definition	CMO:0000053	IAO:0000115	
-WARN	missing_definition	CMO:0000118	IAO:0000115	
-WARN	missing_definition	CMO:0000119	IAO:0000115	
-WARN	missing_definition	CMO:0000286	IAO:0000115	
-WARN	missing_definition	CMO:0000294	IAO:0000115	
-WARN	missing_definition	CMO:0000360	IAO:0000115	
-WARN	missing_definition	CMO:0000364	IAO:0000115	
-WARN	missing_definition	CMO:0000490	IAO:0000115	
-WARN	missing_definition	CMO:0000503	IAO:0000115	
-WARN	missing_definition	CMO:0000515	IAO:0000115	
-WARN	missing_definition	CMO:0001003	IAO:0000115	
-WARN	missing_definition	CMO:0001247	IAO:0000115	
-WARN	missing_definition	CMO:0001822	IAO:0000115	
-WARN	missing_definition	CMO:0001824	IAO:0000115	
-WARN	missing_definition	CMO:0002048	IAO:0000115	
-WARN	missing_definition	CMO:0002049	IAO:0000115	
-WARN	missing_definition	CMO:0002280	IAO:0000115	
-WARN	missing_definition	CMO:0002281	IAO:0000115	
-WARN	missing_definition	CMO:0002570	IAO:0000115	
-WARN	missing_definition	CMO:0002786	IAO:0000115	
-WARN	missing_definition	DOID:11949	IAO:0000115	
-WARN	missing_definition	DOID:4175	IAO:0000115	
-WARN	missing_definition	FMA:68614	IAO:0000115	
-WARN	missing_definition	IAO:0000114	IAO:0000115	
-WARN	missing_definition	IAO:0000425	IAO:0000115	
-WARN	missing_definition	IAO:0000600	IAO:0000115	
-WARN	missing_definition	IAO:0000601	IAO:0000115	
-WARN	missing_definition	IAO:0000602	IAO:0000115	
-WARN	missing_definition	MFOEM:000010	IAO:0000115	
-WARN	missing_definition	MFOEM:000165	IAO:0000115	
-WARN	missing_definition	MFOMD:0000021	IAO:0000115	
-WARN	missing_definition	MFOMD:0000037	IAO:0000115	
-WARN	missing_definition	MFOMD:0000069	IAO:0000115	
-WARN	missing_definition	NCIT:C17456	IAO:0000115	
-WARN	missing_definition	NCIT:C35269	IAO:0000115	
-WARN	missing_definition	NCIT:C39011	IAO:0000115	
-WARN	missing_definition	NCIT:C39194	IAO:0000115	
-WARN	missing_definition	NCIT:C63479	IAO:0000115	
-WARN	missing_definition	OAE:0004334	IAO:0000115	
-WARN	missing_definition	SYMP:0000387	IAO:0000115	
-WARN	missing_definition	SYMP:0000410	IAO:0000115	
-WARN	missing_definition	SYMP:0000459	IAO:0000115	
-WARN	missing_definition	SYMP:0000461	IAO:0000115	
-WARN	missing_definition	SYMP:0000473	IAO:0000115	
-WARN	missing_definition	SYMP:0000480	IAO:0000115	
-WARN	missing_definition	SYMP:0000567	IAO:0000115	
-WARN	missing_definition	SYMP:0019139	IAO:0000115	
-WARN	missing_definition	UBERON:0005913	IAO:0000115	
-WARN	missing_definition	UBERON:0034944	IAO:0000115	
-WARN	missing_definition	obo:UBPROP_0000007	IAO:0000115	
-WARN	missing_definition	obo:UBPROP_0000201	IAO:0000115	
-WARN	missing_definition	obo:UBPROP_0000202	IAO:0000115	
-WARN	missing_definition	dc11:contributor	IAO:0000115	
-WARN	missing_definition	dc11:description	IAO:0000115	
-WARN	missing_definition	dc11:source	IAO:0000115	
-WARN	missing_definition	dc:contributor	IAO:0000115	
-WARN	missing_definition	dc:license	IAO:0000115	
-WARN	missing_definition	dc:title	IAO:0000115	
-WARN	missing_definition	http://www.co-ode.org/ontologies/ont.owl#obsessive–compulsive	IAO:0000115	
-WARN	missing_definition	oboInOwl:hasBroadSynonym	IAO:0000115	
-WARN	missing_definition	oboInOwl:hasNarrowSynonym	IAO:0000115	
-WARN	missing_definition	oboInOwl:shorthand	IAO:0000115	
-WARN	missing_definition	foaf:depicted_by	IAO:0000115	
-WARN	missing_definition	https://bio.scai.fraunhofer.de/ontology/bipolar_disorder#serum_lipid_level	IAO:0000115	
-WARN	missing_definition	https://www.wikidata.org/wiki/Property:P1659	IAO:0000115	
-WARN	missing_definition	https://www.wikidata.org/wiki/Property:P486	IAO:0000115	
-WARN	duplicate_scoped_synonym	NCBITaxon:2759	oboInOwl:hasExactSynonym	eukaryotes
-WARN	duplicate_scoped_synonym	NCBITaxon:2759	oboInOwl:hasRelatedSynonym	eukaryotes
-WARN	duplicate_scoped_synonym	NCBITaxon:40674	oboInOwl:hasExactSynonym	mammals
-WARN	duplicate_scoped_synonym	NCBITaxon:40674	oboInOwl:hasRelatedSynonym	mammals
-WARN	duplicate_scoped_synonym	NCBITaxon:6231	oboInOwl:hasExactSynonym	nematodes
-WARN	duplicate_scoped_synonym	NCBITaxon:6231	oboInOwl:hasRelatedSynonym	nematodes
-WARN	duplicate_scoped_synonym	NCBITaxon:6656	oboInOwl:hasExactSynonym	arthropods
-WARN	duplicate_scoped_synonym	NCBITaxon:6656	oboInOwl:hasRelatedSynonym	arthropods
-WARN	duplicate_scoped_synonym	NCBITaxon:7742	oboInOwl:hasExactSynonym	vertebrates
-WARN	duplicate_scoped_synonym	NCBITaxon:7742	oboInOwl:hasRelatedSynonym	vertebrates
-WARN	duplicate_scoped_synonym	UBERON:0001018	oboInOwl:hasNarrowSynonym	nerve tract
-WARN	duplicate_scoped_synonym	UBERON:0001018	oboInOwl:hasRelatedSynonym	nerve tract
-WARN	duplicate_scoped_synonym	UBERON:0002769	oboInOwl:hasExactSynonym	gyrus temporalis superior
-WARN	duplicate_scoped_synonym	UBERON:0002769	oboInOwl:hasRelatedSynonym	gyrus temporalis superior
-WARN	duplicate_scoped_synonym	UBERON:0003883	oboInOwl:hasExactSynonym	CA3
-WARN	duplicate_scoped_synonym	UBERON:0003883	oboInOwl:hasExactSynonym	regio III cornus ammonis
-WARN	duplicate_scoped_synonym	UBERON:0003883	oboInOwl:hasRelatedSynonym	CA3
-WARN	duplicate_scoped_synonym	UBERON:0003883	oboInOwl:hasRelatedSynonym	regio III cornus ammonis
-WARN	duplicate_scoped_synonym	UBERON:0006101	oboInOwl:hasBroadSynonym	B09-24
-WARN	duplicate_scoped_synonym	UBERON:0006101	oboInOwl:hasExactSynonym	B09-24
-WARN	duplicate_scoped_synonym	UBERON:0006473	oboInOwl:hasBroadSynonym	B09-18
-WARN	duplicate_scoped_synonym	UBERON:0006473	oboInOwl:hasExactSynonym	B09-18
-WARN	duplicate_scoped_synonym	UBERON:0006481	oboInOwl:hasBroadSynonym	B09-44
-WARN	duplicate_scoped_synonym	UBERON:0006481	oboInOwl:hasExactSynonym	B09-44
-WARN	duplicate_scoped_synonym	UBERON:0006482	oboInOwl:hasBroadSynonym	B09-45
-WARN	duplicate_scoped_synonym	UBERON:0006482	oboInOwl:hasBroadSynonym	BA45
-WARN	duplicate_scoped_synonym	UBERON:0006482	oboInOwl:hasExactSynonym	B09-45
-WARN	duplicate_scoped_synonym	UBERON:0006482	oboInOwl:hasExactSynonym	BA45
-WARN	duplicate_scoped_synonym	UBERON:0006483	oboInOwl:hasBroadSynonym	B09-46
-WARN	duplicate_scoped_synonym	UBERON:0006483	oboInOwl:hasExactSynonym	B09-46
-WARN	duplicate_scoped_synonym	UBERON:0006483	oboInOwl:hasExactSynonym	middle frontal area 46
-WARN	duplicate_scoped_synonym	UBERON:0006483	oboInOwl:hasRelatedSynonym	middle frontal area 46
-WARN	duplicate_scoped_synonym	UBERON:0006484	oboInOwl:hasBroadSynonym	B09-47
-WARN	duplicate_scoped_synonym	UBERON:0006484	oboInOwl:hasExactSynonym	B09-47
-WARN	duplicate_scoped_synonym	UBERON:0013528	oboInOwl:hasBroadSynonym	B09-11
-WARN	duplicate_scoped_synonym	UBERON:0013528	oboInOwl:hasExactSynonym	B09-11
-WARN	duplicate_scoped_synonym	UBERON:0013528	oboInOwl:hasExactSynonym	area 11 of Brodmann
-WARN	duplicate_scoped_synonym	UBERON:0013528	oboInOwl:hasRelatedSynonym	area 11 of Brodmann
-WARN	duplicate_scoped_synonym	UBERON:0013539	oboInOwl:hasBroadSynonym	B09-8
-WARN	duplicate_scoped_synonym	UBERON:0013539	oboInOwl:hasExactSynonym	B09-8
-WARN	duplicate_scoped_synonym	UBERON:0013540	oboInOwl:hasBroadSynonym	B09-9
-WARN	duplicate_scoped_synonym	UBERON:0013540	oboInOwl:hasExactSynonym	B09-9
-WARN	duplicate_scoped_synonym	UBERON:0013541	oboInOwl:hasBroadSynonym	B09-10
-WARN	duplicate_scoped_synonym	UBERON:0013541	oboInOwl:hasExactSynonym	B09-10
-WARN	duplicate_scoped_synonym	UBERON:0013550	oboInOwl:hasBroadSynonym	B09-19
-WARN	duplicate_scoped_synonym	UBERON:0013550	oboInOwl:hasExactSynonym	B09-19
-WARN	duplicate_scoped_synonym	UBERON:0013551	oboInOwl:hasBroadSynonym	B09-20
-WARN	duplicate_scoped_synonym	UBERON:0013551	oboInOwl:hasExactSynonym	B09-20
-WARN	duplicate_scoped_synonym	UBERON:0013552	oboInOwl:hasBroadSynonym	B09-21
-WARN	duplicate_scoped_synonym	UBERON:0013552	oboInOwl:hasExactSynonym	B09-21
-WARN	duplicate_scoped_synonym	UBERON:0013553	oboInOwl:hasBroadSynonym	B09-22
-WARN	duplicate_scoped_synonym	UBERON:0013553	oboInOwl:hasExactSynonym	B09-22
-WARN	duplicate_scoped_synonym	UBERON:0013556	oboInOwl:hasBroadSynonym	B09-25
-WARN	duplicate_scoped_synonym	UBERON:0013556	oboInOwl:hasExactSynonym	B09-25
-WARN	duplicate_scoped_synonym	UBERON:0013560	oboInOwl:hasBroadSynonym	B09-32
-WARN	duplicate_scoped_synonym	UBERON:0013560	oboInOwl:hasExactSynonym	B09-32
 WARN	annotation_whitespace	BFO:0000002	IAO:0000602	(forall (x y) (if (and (Continuant x) (exists (t) (continuantPartOfAt y x t))) (Continuant y))) // axiom label in BFO2 CLIF: [009-002] 
 WARN	annotation_whitespace	BFO:0000002	IAO:0000602	(forall (x y) (if (and (Continuant x) (exists (t) (hasContinuantPartOfAt y x t))) (Continuant y))) // axiom label in BFO2 CLIF: [126-001] 
 WARN	annotation_whitespace	BFO:0000002	IAO:0000602	(forall (x) (if (Continuant x) (Entity x))) // axiom label in BFO2 CLIF: [008-002] 
@@ -727,6 +591,62 @@ In the examples above, a reagent is an operational component of a device, but th
 WARN	annotation_whitespace	OMIABIS:0001008	rdfs:comment	"It is argued that Comorbidity occurs due to a disposition established by a prior infection with a pathogenic organism of a different kind.
 @en"
 WARN	annotation_whitespace	RO:0002161	IAO:0000425	?X DisjointWith RO_0002162 some ?Y 
+WARN	duplicate_scoped_synonym	NCBITaxon:2759	oboInOwl:hasExactSynonym	eukaryotes
+WARN	duplicate_scoped_synonym	NCBITaxon:2759	oboInOwl:hasRelatedSynonym	eukaryotes
+WARN	duplicate_scoped_synonym	NCBITaxon:40674	oboInOwl:hasExactSynonym	mammals
+WARN	duplicate_scoped_synonym	NCBITaxon:40674	oboInOwl:hasRelatedSynonym	mammals
+WARN	duplicate_scoped_synonym	NCBITaxon:6231	oboInOwl:hasExactSynonym	nematodes
+WARN	duplicate_scoped_synonym	NCBITaxon:6231	oboInOwl:hasRelatedSynonym	nematodes
+WARN	duplicate_scoped_synonym	NCBITaxon:6656	oboInOwl:hasExactSynonym	arthropods
+WARN	duplicate_scoped_synonym	NCBITaxon:6656	oboInOwl:hasRelatedSynonym	arthropods
+WARN	duplicate_scoped_synonym	NCBITaxon:7742	oboInOwl:hasExactSynonym	vertebrates
+WARN	duplicate_scoped_synonym	NCBITaxon:7742	oboInOwl:hasRelatedSynonym	vertebrates
+WARN	duplicate_scoped_synonym	UBERON:0001018	oboInOwl:hasNarrowSynonym	nerve tract
+WARN	duplicate_scoped_synonym	UBERON:0001018	oboInOwl:hasRelatedSynonym	nerve tract
+WARN	duplicate_scoped_synonym	UBERON:0002769	oboInOwl:hasExactSynonym	gyrus temporalis superior
+WARN	duplicate_scoped_synonym	UBERON:0002769	oboInOwl:hasRelatedSynonym	gyrus temporalis superior
+WARN	duplicate_scoped_synonym	UBERON:0003883	oboInOwl:hasExactSynonym	CA3
+WARN	duplicate_scoped_synonym	UBERON:0003883	oboInOwl:hasExactSynonym	regio III cornus ammonis
+WARN	duplicate_scoped_synonym	UBERON:0003883	oboInOwl:hasRelatedSynonym	CA3
+WARN	duplicate_scoped_synonym	UBERON:0003883	oboInOwl:hasRelatedSynonym	regio III cornus ammonis
+WARN	duplicate_scoped_synonym	UBERON:0006101	oboInOwl:hasBroadSynonym	B09-24
+WARN	duplicate_scoped_synonym	UBERON:0006101	oboInOwl:hasExactSynonym	B09-24
+WARN	duplicate_scoped_synonym	UBERON:0006473	oboInOwl:hasBroadSynonym	B09-18
+WARN	duplicate_scoped_synonym	UBERON:0006473	oboInOwl:hasExactSynonym	B09-18
+WARN	duplicate_scoped_synonym	UBERON:0006481	oboInOwl:hasBroadSynonym	B09-44
+WARN	duplicate_scoped_synonym	UBERON:0006481	oboInOwl:hasExactSynonym	B09-44
+WARN	duplicate_scoped_synonym	UBERON:0006482	oboInOwl:hasBroadSynonym	B09-45
+WARN	duplicate_scoped_synonym	UBERON:0006482	oboInOwl:hasBroadSynonym	BA45
+WARN	duplicate_scoped_synonym	UBERON:0006482	oboInOwl:hasExactSynonym	B09-45
+WARN	duplicate_scoped_synonym	UBERON:0006482	oboInOwl:hasExactSynonym	BA45
+WARN	duplicate_scoped_synonym	UBERON:0006483	oboInOwl:hasBroadSynonym	B09-46
+WARN	duplicate_scoped_synonym	UBERON:0006483	oboInOwl:hasExactSynonym	B09-46
+WARN	duplicate_scoped_synonym	UBERON:0006483	oboInOwl:hasExactSynonym	middle frontal area 46
+WARN	duplicate_scoped_synonym	UBERON:0006483	oboInOwl:hasRelatedSynonym	middle frontal area 46
+WARN	duplicate_scoped_synonym	UBERON:0006484	oboInOwl:hasBroadSynonym	B09-47
+WARN	duplicate_scoped_synonym	UBERON:0006484	oboInOwl:hasExactSynonym	B09-47
+WARN	duplicate_scoped_synonym	UBERON:0013528	oboInOwl:hasBroadSynonym	B09-11
+WARN	duplicate_scoped_synonym	UBERON:0013528	oboInOwl:hasExactSynonym	B09-11
+WARN	duplicate_scoped_synonym	UBERON:0013528	oboInOwl:hasExactSynonym	area 11 of Brodmann
+WARN	duplicate_scoped_synonym	UBERON:0013528	oboInOwl:hasRelatedSynonym	area 11 of Brodmann
+WARN	duplicate_scoped_synonym	UBERON:0013539	oboInOwl:hasBroadSynonym	B09-8
+WARN	duplicate_scoped_synonym	UBERON:0013539	oboInOwl:hasExactSynonym	B09-8
+WARN	duplicate_scoped_synonym	UBERON:0013540	oboInOwl:hasBroadSynonym	B09-9
+WARN	duplicate_scoped_synonym	UBERON:0013540	oboInOwl:hasExactSynonym	B09-9
+WARN	duplicate_scoped_synonym	UBERON:0013541	oboInOwl:hasBroadSynonym	B09-10
+WARN	duplicate_scoped_synonym	UBERON:0013541	oboInOwl:hasExactSynonym	B09-10
+WARN	duplicate_scoped_synonym	UBERON:0013550	oboInOwl:hasBroadSynonym	B09-19
+WARN	duplicate_scoped_synonym	UBERON:0013550	oboInOwl:hasExactSynonym	B09-19
+WARN	duplicate_scoped_synonym	UBERON:0013551	oboInOwl:hasBroadSynonym	B09-20
+WARN	duplicate_scoped_synonym	UBERON:0013551	oboInOwl:hasExactSynonym	B09-20
+WARN	duplicate_scoped_synonym	UBERON:0013552	oboInOwl:hasBroadSynonym	B09-21
+WARN	duplicate_scoped_synonym	UBERON:0013552	oboInOwl:hasExactSynonym	B09-21
+WARN	duplicate_scoped_synonym	UBERON:0013553	oboInOwl:hasBroadSynonym	B09-22
+WARN	duplicate_scoped_synonym	UBERON:0013553	oboInOwl:hasExactSynonym	B09-22
+WARN	duplicate_scoped_synonym	UBERON:0013556	oboInOwl:hasBroadSynonym	B09-25
+WARN	duplicate_scoped_synonym	UBERON:0013556	oboInOwl:hasExactSynonym	B09-25
+WARN	duplicate_scoped_synonym	UBERON:0013560	oboInOwl:hasBroadSynonym	B09-32
+WARN	duplicate_scoped_synonym	UBERON:0013560	oboInOwl:hasExactSynonym	B09-32
 WARN	missing_subset_declaration	http://purl.oboInOwllibrary.org/oboInOwl/NCIT_C100110	rdfs:subPropertyOf	
 WARN	missing_subset_declaration	http://purl.oboInOwllibrary.org/oboInOwl/NCIT_C100129	rdfs:subPropertyOf	
 WARN	missing_subset_declaration	http://purl.oboInOwllibrary.org/oboInOwl/NCIT_C101858	rdfs:subPropertyOf	
@@ -815,7 +735,6 @@ WARN	missing_subset_declaration	http://purl.oboInOwllibrary.org/oboInOwl/NCIT_C6
 WARN	missing_subset_declaration	http://purl.oboInOwllibrary.org/oboInOwl/NCIT_C66830	rdfs:subPropertyOf	
 WARN	missing_subset_declaration	http://purl.oboInOwllibrary.org/oboInOwl/NCIT_C67153	rdfs:subPropertyOf	
 WARN	missing_subset_declaration	http://purl.oboInOwllibrary.org/oboInOwl/NCIT_C67154	rdfs:subPropertyOf	
-WARN	missing_subset_declaration	http://purl.oboInOwllibrary.org/oboInOwl/NCIT_C67497	rdfs:subPropertyOf	
 WARN	missing_subset_declaration	http://purl.oboInOwllibrary.org/oboInOwl/NCIT_C77526	rdfs:subPropertyOf	
 WARN	missing_subset_declaration	http://purl.oboInOwllibrary.org/oboInOwl/NCIT_C82590	rdfs:subPropertyOf	
 WARN	missing_subset_declaration	http://purl.oboInOwllibrary.org/oboInOwl/NCIT_C83188	rdfs:subPropertyOf	
@@ -874,6 +793,81 @@ WARN	missing_subset_declaration	http://purl.oboInOwllibrary.org/oboInOwl/uberon/
 WARN	missing_subset_declaration	http://purl.oboInOwllibrary.org/oboInOwl/ubprop#_upper_level	rdfs:subPropertyOf	
 WARN	missing_subset_declaration	blank node	rdfs:subPropertyOf	
 WARN	missing_subset_declaration	blank node	rdfs:subPropertyOf	
+WARN	missing_definition	BFO:0000141	IAO:0000115	
+WARN	missing_definition	CMO:0000000	IAO:0000115	
+WARN	missing_definition	CMO:0000023	IAO:0000115	
+WARN	missing_definition	CMO:0000035	IAO:0000115	
+WARN	missing_definition	CMO:0000036	IAO:0000115	
+WARN	missing_definition	CMO:0000046	IAO:0000115	
+WARN	missing_definition	CMO:0000050	IAO:0000115	
+WARN	missing_definition	CMO:0000051	IAO:0000115	
+WARN	missing_definition	CMO:0000052	IAO:0000115	
+WARN	missing_definition	CMO:0000053	IAO:0000115	
+WARN	missing_definition	CMO:0000118	IAO:0000115	
+WARN	missing_definition	CMO:0000119	IAO:0000115	
+WARN	missing_definition	CMO:0000286	IAO:0000115	
+WARN	missing_definition	CMO:0000294	IAO:0000115	
+WARN	missing_definition	CMO:0000360	IAO:0000115	
+WARN	missing_definition	CMO:0000364	IAO:0000115	
+WARN	missing_definition	CMO:0000490	IAO:0000115	
+WARN	missing_definition	CMO:0000503	IAO:0000115	
+WARN	missing_definition	CMO:0000515	IAO:0000115	
+WARN	missing_definition	CMO:0001003	IAO:0000115	
+WARN	missing_definition	CMO:0001247	IAO:0000115	
+WARN	missing_definition	CMO:0001822	IAO:0000115	
+WARN	missing_definition	CMO:0001824	IAO:0000115	
+WARN	missing_definition	CMO:0002048	IAO:0000115	
+WARN	missing_definition	CMO:0002049	IAO:0000115	
+WARN	missing_definition	CMO:0002280	IAO:0000115	
+WARN	missing_definition	CMO:0002281	IAO:0000115	
+WARN	missing_definition	CMO:0002570	IAO:0000115	
+WARN	missing_definition	CMO:0002786	IAO:0000115	
+WARN	missing_definition	DOID:11949	IAO:0000115	
+WARN	missing_definition	DOID:4175	IAO:0000115	
+WARN	missing_definition	FMA:68614	IAO:0000115	
+WARN	missing_definition	IAO:0000114	IAO:0000115	
+WARN	missing_definition	IAO:0000425	IAO:0000115	
+WARN	missing_definition	IAO:0000600	IAO:0000115	
+WARN	missing_definition	IAO:0000601	IAO:0000115	
+WARN	missing_definition	IAO:0000602	IAO:0000115	
+WARN	missing_definition	MFOEM:000010	IAO:0000115	
+WARN	missing_definition	MFOEM:000165	IAO:0000115	
+WARN	missing_definition	MFOMD:0000021	IAO:0000115	
+WARN	missing_definition	MFOMD:0000037	IAO:0000115	
+WARN	missing_definition	MFOMD:0000069	IAO:0000115	
+WARN	missing_definition	NCIT:C17456	IAO:0000115	
+WARN	missing_definition	NCIT:C35269	IAO:0000115	
+WARN	missing_definition	NCIT:C39011	IAO:0000115	
+WARN	missing_definition	NCIT:C39194	IAO:0000115	
+WARN	missing_definition	NCIT:C63479	IAO:0000115	
+WARN	missing_definition	OAE:0004334	IAO:0000115	
+WARN	missing_definition	SYMP:0000387	IAO:0000115	
+WARN	missing_definition	SYMP:0000410	IAO:0000115	
+WARN	missing_definition	SYMP:0000459	IAO:0000115	
+WARN	missing_definition	SYMP:0000461	IAO:0000115	
+WARN	missing_definition	SYMP:0000473	IAO:0000115	
+WARN	missing_definition	SYMP:0000480	IAO:0000115	
+WARN	missing_definition	SYMP:0000567	IAO:0000115	
+WARN	missing_definition	SYMP:0019139	IAO:0000115	
+WARN	missing_definition	UBERON:0005913	IAO:0000115	
+WARN	missing_definition	UBERON:0034944	IAO:0000115	
+WARN	missing_definition	obo:UBPROP_0000007	IAO:0000115	
+WARN	missing_definition	obo:UBPROP_0000201	IAO:0000115	
+WARN	missing_definition	obo:UBPROP_0000202	IAO:0000115	
+WARN	missing_definition	dc11:contributor	IAO:0000115	
+WARN	missing_definition	dc11:description	IAO:0000115	
+WARN	missing_definition	dc11:source	IAO:0000115	
+WARN	missing_definition	dc:contributor	IAO:0000115	
+WARN	missing_definition	dc:license	IAO:0000115	
+WARN	missing_definition	dc:title	IAO:0000115	
+WARN	missing_definition	http://www.co-ode.org/ontologies/ont.owl#obsessive–compulsive	IAO:0000115	
+WARN	missing_definition	oboInOwl:hasBroadSynonym	IAO:0000115	
+WARN	missing_definition	oboInOwl:hasNarrowSynonym	IAO:0000115	
+WARN	missing_definition	oboInOwl:shorthand	IAO:0000115	
+WARN	missing_definition	foaf:depicted_by	IAO:0000115	
+WARN	missing_definition	https://bio.scai.fraunhofer.de/ontology/bipolar_disorder#serum_lipid_level	IAO:0000115	
+WARN	missing_definition	https://www.wikidata.org/wiki/Property:P1659	IAO:0000115	
+WARN	missing_definition	https://www.wikidata.org/wiki/Property:P486	IAO:0000115	
 INFO	lowercase_definition	BFO:0000004	IAO:0000115	b is an independent continuant = Def. b is a continuant which is such that there is no c and no t such that b s-depends_on c at t. (axiom label in BFO2 Reference: [017-002])@en
 INFO	lowercase_definition	BFO:0000015	IAO:0000115	p is a process = Def. p is an occurrent that has temporal proper parts and for some time t, p s-depends_on some material entity at t. (axiom label in BFO2 Reference: [083-003])@en
 INFO	lowercase_definition	BFO:0000016	IAO:0000600	b is a disposition means: b is a realizable entity & b’s bearer is some material entity & b is such that if it ceases to exist, then its bearer is physically changed, & b’s realization occurs when and because this bearer is in some special physical circumstances, & this realization occurs in virtue of the bearer’s physical make-up. (axiom label in BFO2 Reference: [062-002])@en
