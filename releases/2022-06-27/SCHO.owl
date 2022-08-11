@@ -13833,6 +13833,31 @@ https://www.ebi.ac.uk/ols/ontologies/ero/terms?iri=http%3A%2F%2Fpurl.obolibrary.
     
 
 
+    <!-- http://purl.obolibrary.org/obo/NCIT_C16866 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/NCIT_C16866">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000030"/>
+        <obo:IAO_0000115>A representation of something, often idealized or modified to make it conceptually easier to understand.</obo:IAO_0000115>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/ncit.owl"/>
+        <obo:NCIT_NHC0>C16866</obo:NCIT_NHC0>
+        <obo:NCIT_P106>Intellectual Product</obo:NCIT_P106>
+        <obo:NCIT_P108>Model</obo:NCIT_P108>
+        <obo:NCIT_P207>C3161035</obo:NCIT_P207>
+        <obo:NCIT_P322>CDISC-GLOSS</obo:NCIT_P322>
+        <obo:NCIT_P325>A formal structure for representing and analyzing a process such as a clinical trial or the information pertaining to a restricted context (e.g., clinical trial data). [CDISC]</obo:NCIT_P325>
+        <obo:NCIT_P366>Model_System</obo:NCIT_P366>
+        <oboInOwl:hasExactSynonym>Model</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>Model System</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>Modeling System</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>Models</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>model</oboInOwl:hasExactSynonym>
+        <oboInOwl:inSubset rdf:resource="http://purl.oboInOwllibrary.org/oboInOwl/NCIT_C61410"/>
+        <oboInOwl:inSubset rdf:resource="http://purl.oboInOwllibrary.org/oboInOwl/NCIT_C67497"/>
+        <rdfs:label>Model</rdfs:label>
+    </owl:Class>
+    
+
+
     <!-- http://purl.obolibrary.org/obo/NCIT_C17007 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/NCIT_C17007">
@@ -14253,25 +14278,6 @@ Refer: https://www.ebi.ac.uk/ols/ontologies/obib/terms?iri=http%3A%2F%2Fwww.ebi.
     
 
 
-    <!-- http://purl.obolibrary.org/obo/NCIT_C17456 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/NCIT_C17456">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/NCIT_C80519"/>
-        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/ncit.owl"/>
-        <obo:NCIT_NHC0>C17456</obo:NCIT_NHC0>
-        <obo:NCIT_P106>Intellectual Product</obo:NCIT_P106>
-        <obo:NCIT_P108>Experimental Model</obo:NCIT_P108>
-        <obo:NCIT_P207>C0086272</obo:NCIT_P207>
-        <obo:NCIT_P366>Experimental_Model</obo:NCIT_P366>
-        <scho:Author>Abish</scho:Author>
-        <scho:fromArticle></scho:fromArticle>
-        <oboInOwl:hasExactSynonym>Experimental Model</oboInOwl:hasExactSynonym>
-        <oboInOwl:hasExactSynonym>Experimental Models, Other</oboInOwl:hasExactSynonym>
-        <rdfs:label>Experimental Model</rdfs:label>
-    </owl:Class>
-    
-
-
     <!-- http://purl.obolibrary.org/obo/NCIT_C17563 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/NCIT_C17563">
@@ -14596,7 +14602,7 @@ https://bioportal.bioontology.org/ontologies/ONTOAD?p=classes&amp;conceptid=http
     <!-- http://purl.obolibrary.org/obo/NCIT_C19146 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/NCIT_C19146">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/NCIT_C17456"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000040"/>
         <obo:IAO_0000115>The technique of performing a given procedure in a controlled environment outside of a living organism.</obo:IAO_0000115>
         <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/ncit.owl"/>
         <obo:NCIT_NHC0>C19146</obo:NCIT_NHC0>
@@ -14624,7 +14630,7 @@ https://bioportal.bioontology.org/ontologies/ONTOAD?p=classes&amp;conceptid=http
     <!-- http://purl.obolibrary.org/obo/NCIT_C19148 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/NCIT_C19148">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/NCIT_C17456"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_131567"/>
         <obo:IAO_0000115>Experimentation using a whole, living organism as opposed to a partial or dead organism.</obo:IAO_0000115>
         <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/ncit.owl"/>
         <obo:NCIT_NHC0>C19148</obo:NCIT_NHC0>
@@ -16052,7 +16058,7 @@ https://www.ebi.ac.uk/ols/ontologies/gsso/terms?iri=http%3A%2F%2Fpurl.obolibrary
     <!-- http://purl.obolibrary.org/obo/NCIT_C80519 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/NCIT_C80519">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0000011"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/NCIT_C16866"/>
         <obo:IAO_0000115>Systems designed to elucidate facts about complex biological phenomena, usually in a less complex or theoretical test environment.</obo:IAO_0000115>
         <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/ncit.owl"/>
         <obo:NCIT_NHC0>C80519</obo:NCIT_NHC0>
